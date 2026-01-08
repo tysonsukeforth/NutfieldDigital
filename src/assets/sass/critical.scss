@@ -37,12 +37,13 @@
 
   #hero-1352 {
     /* 250px - 500px - leaving extra space for the navigation */
-    padding: clamp(15.625rem, 35.95vw, 25rem) calc(16 / 16 * 1rem) 0;
+    padding: clamp(15.625rem, 35.95vw, 22.5rem) calc(16 / 16 * 1rem) 0;
     padding-bottom: 0;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: black;
 
     &:before {
       /* Overlay */
@@ -80,6 +81,7 @@
       width: 100%;
       max-width: calc(1280 / 16 * 1rem);
       margin: auto;
+      padding: calc(48 / 16 * 1rem) 0;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -87,6 +89,21 @@
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
       position: relative;
+
+      &:before {
+        /* Overlay */
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+      }
     }
 
     .cs-content {
@@ -176,7 +193,7 @@
     .cs-picture {
       width: 100%;
       /* 427px - 621px */
-      max-width: clamp(26.6875rem, 75vw, 38.8125rem);
+      max-width: clamp(26.6875rem, 75vw, 65rem);
       height: auto;
       display: flex;
       align-items: flex-end;
@@ -297,6 +314,7 @@
       width: 100%;
       height: 100%;
       display: block;
+      opacity: 0.65;
       position: absolute;
       top: 0;
       left: 0;
@@ -336,7 +354,7 @@
     .cs-picture {
       width: 100%;
       position: absolute;
-      bottom: calc(-400 / 16 * 1rem);
+      // bottom: calc(-400 / 16 * 1rem);
       right: calc(-160 / 16 * 1rem);
     }
 
@@ -355,7 +373,7 @@
 @media only screen and (min-width: 48rem) {
   #hero-1352 {
     .cs-picture {
-      bottom: calc(-230 / 16 * 1rem);
+      // bottom: calc(-230 / 16 * 1rem);
     }
   }
 }
@@ -364,14 +382,14 @@
 @media only screen and (min-width: 81.25rem) {
   #hero-1352 {
     .cs-container {
-      position: initial;
+      position: relative;
     }
 
     .cs-picture {
-      margin-left: calc(70 / 16 * 1rem);
+      margin-left: calc(-80 / 16 * 1rem);
       left: 50%;
       right: auto;
-      bottom: -1px;
+      // bottom: -1px;
     }
 
     .cs-bubbles1 {
@@ -389,7 +407,7 @@
 @media only screen and (min-width: 100rem) {
   #hero-1352 {
     .cs-background {
-      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/abstract.jpg");
+      background: url("../images/hero-bg.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
