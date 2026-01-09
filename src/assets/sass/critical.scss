@@ -37,7 +37,7 @@
 
   #hero-1352 {
     /* 250px - 500px - leaving extra space for the navigation */
-    padding: clamp(15.625rem, 35.95vw, 22.5rem) calc(16 / 16 * 1rem) 0;
+    padding: clamp(12rem, 35.95vw, 22.5rem) calc(16 / 16 * 1rem) 0;
     padding-bottom: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -49,7 +49,7 @@
       /* Overlay */
       content: "";
       width: 100%;
-      height: 30%;
+      height: calc(200 / 16 * 1rem);
       background: -webkit-gradient(
         linear,
         left top,
@@ -89,21 +89,6 @@
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
       position: relative;
-
-      &:before {
-        /* Overlay */
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100vw;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.65);
-        z-index: -1;
-        /* prevents the cursor from interacting with it */
-        pointer-events: none;
-      }
     }
 
     .cs-content {
@@ -115,41 +100,60 @@
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
+      position: relative;
+
+      &:before {
+        /* Overlay */
+        content: "";
+        position: absolute;
+        top: calc(-48 / 16 * 1rem);
+        bottom: calc(48 / 16 * 1rem);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: calc(100% + 96 / 16 * 1rem);
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+      }
     }
 
     .cs-topper {
-      font-size: calc(20 / 16 * 1rem);
+      font-size: calc(16 / 16 * 1rem);
       line-height: 1.2em;
       text-transform: uppercase;
       text-align: inherit;
       letter-spacing: 0.1em;
-      font-weight: 700;
-      color: #e8e8e8;
+      color: #ffffff;
       margin-bottom: calc(8 / 16 * 1rem);
       display: block;
     }
 
     .cs-title {
       /* 39px - 61px */
-      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-      font-weight: 700;
-      line-height: 1.2em;
+      font-size: clamp(2.8rem, 6.4vw, 3.8125rem);
+      line-height: 1.05em;
       text-align: inherit;
       max-width: 20ch;
-      margin: 0 0 calc(16 / 16 * 1rem) 0;
+      margin: 0 0 calc(24 / 16 * 1rem) 0;
       color: #fff;
       position: relative;
     }
 
     .cs-text {
-      font-size: calc(20 / 16 * 1rem);
+      font-size: calc(18 / 16 * 1rem);
       line-height: 1.5em;
       text-align: inherit;
       width: 100%;
       /* 464px - 622px */
       max-width: clamp(29rem, 60vw, 38.785rem);
-      margin: 0 0 calc(40 / 16 * 1rem) 0;
+      margin: 0 0 calc(16 / 16 * 1rem) 0;
       color: #e8e8e8;
+
+      &:last-of-type {
+        margin-bottom: calc(40 / 16 * 1rem);
+      }
     }
 
     .cs-button-solid {
@@ -216,7 +220,7 @@
     .cs-bubbles1 {
       width: calc(680 / 16 * 1em);
       height: calc(724 / 16 * 1em);
-      right: calc(-190 / 16 * 1rem);
+      right: calc(-382 / 16 * 1rem);
       /* changes to 172 at large desktop */
       bottom: calc(-100 / 16 * 1em);
 
@@ -343,6 +347,21 @@
     .cs-container {
       flex-direction: row;
       justify-content: space-between;
+
+      &:before {
+        /* Overlay */
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+      }
     }
 
     .cs-content {
