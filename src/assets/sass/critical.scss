@@ -45,7 +45,7 @@
     z-index: 1;
     background-color: black;
 
-    &:before {
+    &::before {
       /* Overlay */
       content: "";
       width: 100%;
@@ -54,18 +54,18 @@
         linear,
         left top,
         left bottom,
-        from(rgba(167, 241, 216, 0.2)),
-        to(rgba(167, 241, 216, 0))
+        from(rgba(166, 241, 215, 0.2)),
+        to(rgba(166, 241, 215, 0))
       );
       background: -o-linear-gradient(
         top,
-        rgba(167, 241, 216, 0.2) 0%,
-        rgba(167, 241, 216, 0) 100%
+        rgba(166, 241, 215, 0.2) 0%,
+        rgba(166, 241, 215, 0) 100%
       );
       background: linear-gradient(
         to bottom,
-        rgba(167, 241, 216, 0.2) 0%,
-        rgba(167, 241, 216, 0) 100%
+        rgba(166, 241, 215, 0.2) 0%,
+        rgba(166, 241, 215, 0) 100%
       );
       opacity: 1;
       position: absolute;
@@ -113,7 +113,7 @@
         transform: translateX(-50%);
         width: 100vw;
         height: calc(100% + 96 / 16 * 1rem);
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: rgba(0, 0, 0, 0.8);
         z-index: -1;
         /* prevents the cursor from interacting with it */
         pointer-events: none;
@@ -135,6 +135,7 @@
       /* 39px - 61px */
       font-size: clamp(2.8rem, 6.4vw, 3.8125rem);
       line-height: 1.05em;
+      text-transform: uppercase;
       text-align: inherit;
       max-width: 20ch;
       margin: 0 0 calc(24 / 16 * 1rem) 0;
@@ -324,6 +325,7 @@
       top: 0;
       left: 0;
       z-index: -2;
+      opacity: 0.75;
       transition: opacity 0.3s;
 
       img {
@@ -395,13 +397,13 @@
 }
 
 /* Desktop - 1024px */
-@media only screen and (min-width: 48rem) {
-  #hero-1352 {
-    .cs-picture {
-      // bottom: calc(-230 / 16 * 1rem);
-    }
-  }
-}
+// @media only screen and (min-width: 48rem) {
+//   #hero-1352 {
+//     .cs-picture {
+//       // bottom: calc(-230 / 16 * 1rem);
+//     }
+//   }
+// }
 
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
@@ -482,7 +484,7 @@
       }
 
       .cs-background {
-        opacity: 0.65;
+        opacity: 0.5;
       }
     }
   }

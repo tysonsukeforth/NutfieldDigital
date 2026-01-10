@@ -29,7 +29,7 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(1.9375rem, 4.5vw, 3rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
@@ -79,7 +79,6 @@
     margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
-    text-transform: uppercase;
     letter-spacing: 0.025em;
   }
 
@@ -88,7 +87,7 @@
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
-    max-width: 40.625rem;
+    max-width: 48rem;
     margin: 0;
     color: var(--bodyTextColor);
   }
