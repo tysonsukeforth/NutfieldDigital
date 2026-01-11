@@ -1,6 +1,6 @@
 {
-  "name": "Starter Kit",
-  "short_name": "Starter Kit",
+  "name": "Nutfield Digital",
+  "short_name": "Nutfield",
   "icons": [
     {
       "src": "/assets/favicons/web-app-manifest-192x192.png",
@@ -16,6 +16,6 @@
     }
   ],
   "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "background_color": "#FF4D01",
   "display": "standalone"
 }
