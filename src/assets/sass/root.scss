@@ -13,18 +13,18 @@
 @media only screen and (min-width: 0px) {
   /* All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
   :root {
-    --primary: #fe4d03;
-    --primaryLight: var(--primary);
+    --primary: #e23003;
+    --primaryLight: #fe4d03;
     --secondary: var(--primary);
-    --secondaryLight: var(--primary);
+    --secondaryLight: var(--primaryLight);
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
 
     /* Dark Mode Styles */
-    --dark: #031C22;
-    --medium: #0B3438;
-    --accent: #6C9E8D;
+    --dark: #031c22;
+    --medium: #0b3438;
+    --accent: #6c9e8d;
 
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -505,7 +505,8 @@
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
-    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s, background-color 0.3s;
+    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s,
+      background-color 0.3s;
 
     &:before {
       /* background color */
@@ -522,7 +523,8 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      transition: transform 0.2s, background-color 0.3s, border-radius 0.3s ease-in-out;
+      transition: transform 0.2s, background-color 0.3s,
+        border-radius 0.3s ease-in-out;
     }
 
     &.cs-active {
