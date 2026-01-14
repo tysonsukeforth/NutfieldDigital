@@ -790,13 +790,15 @@
 }
 
 /*-- -------------------------- -->
-<---        Why Choose Us       -->
+<---       Need For Speed       -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #why-choose-1824 {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+    transition: background-color 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -828,7 +830,7 @@
     }
 
     .cs-title {
-      margin: 0;
+      margin: 0 0 1rem;
       max-width: 20ch;
     }
 
@@ -880,7 +882,7 @@
       font-size: clamp(1.5625rem, 2.5vw, 1.9375rem);
       line-height: 1.2em;
       text-align: inherit;
-      font-weight: 700;
+      font-weight: 400;
       margin: 0 0 calc(16 / 16 * 1rem);
       color: var(--bodyTextColorWhite);
     }
@@ -1096,6 +1098,7 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #why-choose-1824 {
+      background-color: var(--dark);
       .cs-title,
       .cs-button-text {
         color: var(--bodyTextColorWhite);
@@ -1282,12 +1285,7 @@
         height: 1px;
         /* 32px - 40px */
         margin-bottom: clamp(2rem, 4vw, 2.5rem);
-        background: linear-gradient(
-          90deg,
-          rgba(232, 232, 232, 0.2) 0%,
-          #e8e8e8 53.78%,
-          rgba(232, 232, 232, 0.2) 100%
-        );
+        background: linear-gradient(90deg, rgba(232, 232, 232, 0.2) 0%, #e8e8e8 53.78%, rgba(232, 232, 232, 0.2) 100%);
         opacity: 1;
         position: relative;
         display: block;
