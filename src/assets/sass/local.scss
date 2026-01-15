@@ -427,6 +427,7 @@
 
   #sbs-1362 {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -484,7 +485,7 @@
       padding: clamp(1rem, 3vw, 1.5rem);
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
-      background-color: #f7f7f7;
+      background-color: #ffffff;
       border-radius: calc(16 / 16 * 1rem);
       border: 1px solid #e8e8e8;
       display: flex;
@@ -797,7 +798,6 @@
 @media only screen and (min-width: 0rem) {
   #why-choose-1824 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
     transition: background-color 0.3s;
     position: relative;
     overflow: hidden;
@@ -1140,7 +1140,7 @@
 @media only screen and (min-width: 0rem) {
   #pricing-357 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    background-color: var(--primaryDark-10);
 
     .cs-container {
       width: 100%;
@@ -1187,6 +1187,9 @@
       border: 1px solid #e8e8e8;
       /* prevents padding from adding to height and width */
       box-sizing: border-box;
+      /* Moves the CTA button to the bottom of the card */
+      display: flex;
+      flex-direction: column;
 
       &:nth-of-type(2) {
         .cs-option2-text,
@@ -1204,7 +1207,7 @@
     }
 
     .cs-popular {
-      background: var(--primary);
+      background: var(--primaryDark);
       position: relative;
       /* clips the popular tag */
       overflow: hidden;
@@ -1214,8 +1217,9 @@
       &:before {
         /* Most Popular Tag */
         content: "Popular";
-        font-size: calc(14 / 16 * 1rem);
+        font-size: calc(12 / 16 * 1rem);
         text-align: center;
+        text-transform: uppercase;
         line-height: calc(29 / 16 * 1em);
         font-weight: 700;
         width: calc(170 / 16 * 1rem);
@@ -1225,7 +1229,7 @@
         position: absolute;
         display: block;
         top: calc(20 / 16 * 1rem);
-        right: calc(-60 / 16 * 1rem);
+        right: calc(-54 / 16 * 1rem);
         transform: rotate(42deg);
       }
 
@@ -1259,10 +1263,11 @@
     }
 
     .cs-h3 {
-      font-size: calc(20 / 16 * 1rem);
+      font-size: calc(28 / 16 * 1rem);
       line-height: 1.2em;
-      font-weight: 700;
-      margin: 0 0 calc(4 / 16 * 1rem);
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 0 calc(0 / 16 * 1rem);
       padding: 0;
       color: var(--headerColor);
     }
@@ -1293,9 +1298,10 @@
     }
 
     .cs-price {
-      font-size: calc(49 / 16 * 1rem);
+      font-family: var(--headerFont);
+      font-size: calc(42 / 16 * 1rem);
       line-height: 1.2em;
-      font-weight: 700;
+      font-weight: 400;
       margin-bottom: calc(24 / 16 * 1rem);
       color: var(--headerColor);
       /* spans are inline, need to add block for margin to work */
@@ -1303,7 +1309,9 @@
     }
 
     .cs-small {
+      font-family: var(--bodyFont);
       font-size: calc(14 / 16 * 1rem);
+      line-height: 1;
       font-weight: 400;
       color: #4e4b66;
     }
@@ -1323,6 +1331,7 @@
       margin: 0;
       /* 32px - 40px */
       margin-bottom: clamp(2rem, 4vw, 2.5rem);
+      flex-grow: 1;
     }
 
     .cs-li {
@@ -1398,7 +1407,7 @@
     .cs-button-solid {
       /* cs-button-solid override */
       width: 100%;
-      margin: 0 0calc calc(16 / 16 * 1rem) 0;
+      margin: 0 0 calc(16 / 16 * 1rem) 0;
     }
   }
 }
@@ -1726,9 +1735,9 @@
       max-width: calc(1280 / 16 * 1rem);
     }
 
-    .cs-item {
-      grid-column: span 6;
-    }
+    // .cs-item {
+    //   grid-column: span 6;
+    // }
   }
 }
 
@@ -1799,7 +1808,6 @@
 @media only screen and (min-width: 0rem) {
   #cta-2443 {
     padding: var(--sectionPadding);
-    background-color: #010104;
     position: relative;
     z-index: 1;
 
@@ -1823,113 +1831,95 @@
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
+      gap: calc(16 / 16 * 1rem);
+    }
 
-      .cs-flex-group {
-        /* prevents flexbox from squishing it */
-        flex: none;
-      }
-
-      .cs-color {
-        color: var(--primary);
-      }
+    .cs-title-group {
+      flex: none;
+      margin-bottom: calc(16 / 16 * 1rem);
+      position: relative;
     }
 
     .cs-title {
-      font-size: clamp(calc(61 / 16 * 1rem), 8vw, calc(120 / 16 * 1rem));
+      font-size: clamp(calc(24 / 16 * 1rem), 4vw, calc(48 / 16 * 1rem));
       margin: 0;
-      color: var(--bodyTextColorWhite);
-      flex: none;
+    }
+
+    .cs-flex {
+      position: relative;
+      padding: calc(32 / 16 * 1rem);
+
+      &:before {
+        /* background color */
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: calc(32 / 16 * 1rem);
+        background: var(--primary);
+        opacity: 0.05;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        /* prevents the mouse from interacting it */
+        pointer-events: none;
+      }
     }
 
     .cs-text {
       margin-bottom: calc(16 / 16 * 1rem);
-      color: var(--bodyTextColorWhite);
-      opacity: 0.8;
+
+      strong {
+        color: var(--dark);
+      }
 
       &:last-of-type {
-        margin-bottom: calc(32 / 16 * 1rem);
-      }
-    }
-
-    .cs-button-solid {
-      font-size: calc(16 / 16 * 1rem);
-      /* 46px - 56px */
-      line-height: clamp(2.875em, 5.5vw, 3.5em);
-      text-decoration: none;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      color: #fff;
-      min-width: calc(150 / 16 * 1rem);
-      padding: 0 calc(24 / 16 * 1rem);
-      background-color: var(--primary);
-      border-radius: calc(4 / 16 * 1rem);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-
-      &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: calc(4 / 16 * 1rem);
-        transition: width 0.3s;
-      }
-
-      &:hover {
-        &:before {
-          width: 100%;
-        }
+        margin-bottom: 0;
       }
     }
 
     .cs-background {
-      width: 100%;
-      height: 100%;
       display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
+      float: left;
+      position: relative;
+      top: 1.5rem;
+      width: clamp(calc(100 / 16 * 1rem), 15vw, calc(200 / 16 * 1rem));
+      margin: 0 -2rem 0.5rem 0;
 
       img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
         width: 100%;
-        opacity: 0.08;
-        /* Makes img tag act as a background image */
-        object-fit: cover;
+        height: auto;
       }
     }
   }
 }
 
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
   #cta-2443 {
     .cs-content {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: calc(48 / 16 * 1rem);
+    }
 
-      .cs-flex-group {
-        width: 50%;
-      }
+    .cs-background {
+      float: none;
+      position: absolute;
+      top: auto;
+      bottom: -50%;
+      left: clamp(-6rem, -7vw, -5rem);
+      z-index: -1;
+    }
+
+    .cs-title-group {
+      flex: auto;
+      margin-left: 5rem;
     }
 
     .cs-flex {
-      max-width: calc(372 / 16 * 1rem);
+      max-width: calc(641 / 16 * 1rem);
     }
   }
 }
@@ -1939,6 +1929,19 @@
   body.dark-mode {
     #cta-2443 {
       background-color: rgba(0, 0, 0, 0.8);
+
+      .cs-flex {
+        &:before {
+          background: var(--medium);
+          opacity: 1;
+        }
+      }
+
+      .cs-text {
+        strong {
+          color: var(--primaryLight);
+        }
+      }
     }
   }
 }

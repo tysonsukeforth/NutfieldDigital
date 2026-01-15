@@ -15,7 +15,9 @@
   :root {
     --primary: #e23003;
     --primaryLight: #fe4d03;
-    --secondary: var(--primary);
+    --primaryDark: #9c2f00;
+    --primaryDark-10: #f6ebe6;
+    --secondary: #ff9900;
     --secondaryLight: var(--primaryLight);
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -505,8 +507,7 @@
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
-    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s,
-      background-color 0.3s;
+    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s, background-color 0.3s;
 
     &:before {
       /* background color */
@@ -523,8 +524,7 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      transition: transform 0.2s, background-color 0.3s,
-        border-radius 0.3s ease-in-out;
+      transition: transform 0.2s, background-color 0.3s, border-radius 0.3s ease-in-out;
     }
 
     &.cs-active {
@@ -708,8 +708,7 @@
       height: auto;
       margin: 0;
       /* 32px - 40px */
-      padding: calc(64 / 16 * 1rem) clamp(2rem, 3vw, 2.5rem)
-        calc(64 / 16 * 1rem) calc(32 / 16 * 1rem);
+      padding: calc(64 / 16 * 1rem) clamp(2rem, 3vw, 2.5rem) calc(64 / 16 * 1rem) calc(32 / 16 * 1rem);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -900,8 +899,7 @@
       gap: calc(12 / 16 * 1rem);
       overflow: hidden;
       transform: scale(0);
-      transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s,
-        transform 0.3s, visibility 0.3s;
+      transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, transform 0.3s, visibility 0.3s;
       transform-origin: top right;
     }
 
@@ -1366,21 +1364,9 @@
         content: "";
         width: calc(132 / 16 * 1rem);
         height: calc(900 / 16 * 1rem);
-        background: -moz-linear-gradient(
-          top,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0.45) 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          top,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0.45) 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to bottom,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0.45) 100%
-        );
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%);
         opacity: 0.08;
         transform: rotate(-25deg);
         position: absolute;
@@ -1398,21 +1384,9 @@
         content: "";
         width: calc(132 / 16 * 1rem);
         height: calc(1000 / 16 * 1rem);
-        background: -moz-linear-gradient(
-          top,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0.45) 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          top,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0.45) 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to bottom,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0.45) 100%
-        );
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%);
         opacity: 0.08;
         transform: rotate(-25deg);
         position: absolute;
