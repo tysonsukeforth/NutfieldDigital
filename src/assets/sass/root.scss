@@ -1479,17 +1479,6 @@
       display: block;
       /* moves it to the 1st position at the top */
       order: -1;
-      aspect-ratio: 300/475;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: calc(8 / 16 * 1rem) calc(8 / 16 * 1rem) 0 0;
-        object-fit: cover;
-      }
     }
   }
 }
@@ -1540,7 +1529,7 @@
 
     .cs-picture {
       width: 41vw;
-      max-width: calc(457 / 16 * 1rem);
+      max-width: calc(620 / 16 * 1rem);
       /* height is a percentage of parent container height. When the cs-content height changes from extra text, the height of the image adjusts. Since the container is now longer/shorter, 150% of that height with also be longer/shorter */
       height: clamp(145%, 44vw, 160%);
       /* 500px - 578px */
