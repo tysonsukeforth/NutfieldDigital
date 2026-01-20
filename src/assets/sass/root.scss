@@ -426,7 +426,9 @@
     .cs-moon {
       z-index: 2;
       // Transition properties
-      transition: transform 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
     }
 
     .cs-sun {
@@ -434,7 +436,9 @@
       z-index: 1;
       // Transition property
       transform: translate(-50%, 100%);
-      transition: transform 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
     }
   }
 }
@@ -497,7 +501,12 @@
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
-    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s, background-color 0.3s;
+    transition:
+      top 0.3s,
+      border-radius 0.3s,
+      width 0.3s,
+      max-width 0.3s,
+      background-color 0.3s;
 
     &:before {
       /* background color */
@@ -514,7 +523,10 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      transition: transform 0.2s, background-color 0.3s, border-radius 0.3s ease-in-out;
+      transition:
+        transform 0.2s,
+        background-color 0.3s,
+        border-radius 0.3s ease-in-out;
     }
 
     &.cs-active {
@@ -601,7 +613,9 @@
       justify-content: flex-start;
       align-items: center;
       gap: calc(8 / 16 * 1rem);
-      transition: opacity 0.3s, color 0.3s;
+      transition:
+        opacity 0.3s,
+        color 0.3s;
     }
 
     .cs-phone-icon {
@@ -651,7 +665,10 @@
 
     .cs-line1 {
       top: 0;
-      transition: transform 0.5s, top 0.3s, left 0.3s;
+      transition:
+        transform 0.5s,
+        top 0.3s,
+        left 0.3s;
       animation-duration: 0.7s;
       animation-timing-function: ease;
       animation-direction: normal;
@@ -662,7 +679,10 @@
     .cs-line2 {
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
-      transition: top 0.3s, left 0.3s, transform 0.5s;
+      transition:
+        top 0.3s,
+        left 0.3s,
+        transform 0.5s;
       animation-duration: 0.7s;
       animation-timing-function: ease;
       animation-direction: normal;
@@ -671,7 +691,9 @@
 
     .cs-line3 {
       bottom: 0;
-      transition: bottom 0.3s, opacity 0.3s;
+      transition:
+        bottom 0.3s,
+        opacity 0.3s;
     }
 
     .cs-ul-wrapper {
@@ -687,7 +709,10 @@
       z-index: -1;
       overflow: hidden;
       transform: scaleY(0);
-      transition: transform 0.3s, width 0.5s, top 0.3s;
+      transition:
+        transform 0.3s,
+        width 0.5s,
+        top 0.3s;
       transition-delay: width 0.3s;
       transform-origin: top right;
     }
@@ -715,7 +740,9 @@
       opacity: 0;
       /* transition from these values */
       transform: translateX(-2.5rem);
-      transition: transform 0.6s, opacity 0.9s;
+      transition:
+        transform 0.6s,
+        opacity 0.9s;
 
       &:nth-of-type(1) {
         transition-delay: 0.05s;
@@ -889,7 +916,13 @@
       gap: calc(12 / 16 * 1rem);
       overflow: hidden;
       transform: scale(0);
-      transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, transform 0.3s, visibility 0.3s;
+      transition:
+        padding 0.3s,
+        margin 0.3s,
+        height 0.3s,
+        opacity 0.3s,
+        transform 0.3s,
+        visibility 0.3s;
       transform-origin: top right;
     }
 
@@ -951,7 +984,10 @@
       z-index: -100;
       overflow: hidden;
       transform: scaleY(0);
-      transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        visibility 0.3s,
+        opacity 0.3s;
       transform-origin: top;
     }
 
@@ -964,7 +1000,9 @@
       opacity: 0;
       display: block;
       transform: translateY(-0.625rem);
-      transition: opacity 0.6s, transform 0.6s;
+      transition:
+        opacity 0.6s,
+        transform 0.6s;
 
       &:nth-of-type(1) {
         transition-delay: 0.05s;
@@ -1008,7 +1046,9 @@
         padding: calc(12 / 16 * 1rem);
         color: var(--headerColor);
         display: block;
-        transition: color 0.3s, background-color 0.3s;
+        transition:
+          color 0.3s,
+          background-color 0.3s;
 
         &:hover {
           color: var(--bodyTextColorWhite);
@@ -1074,7 +1114,11 @@
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
-    transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+    transition:
+      top 0.3s,
+      border-radius 0.3s,
+      width 0.3s,
+      max-width 0.3s;
 
     .cs-container {
       width: 100%;
@@ -1130,7 +1174,9 @@
       justify-content: flex-start;
       align-items: center;
       gap: calc(8 / 16 * 1rem);
-      transition: opacity 0.3s, color 0.3s;
+      transition:
+        opacity 0.3s,
+        color 0.3s;
     }
 
     .cs-phone-icon {
@@ -1147,7 +1193,10 @@
       justify-content: center;
       align-items: center;
       gap: calc(8 / 16 * 1rem);
-      transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+      transition:
+        opacity 0.3s,
+        visibility 0.3s,
+        height 0.3s;
     }
 
     .cs-social-link {
@@ -1434,13 +1483,17 @@
     @keyframes paintbrush {
       0% {
         transform: rotate(3deg) translateX(0%);
-      } 8% {
+      }
+      8% {
         transform: rotate(18deg) translateX(1%);
-      } 20% {
+      }
+      20% {
         transform: rotate(15deg) translateX(-5%);
-      } 90% {
+      }
+      90% {
         transform: rotate(1deg) translateX(-1%);
-      } 100% {
+      }
+      100% {
         transform: rotate(3deg) translateX(0%);
       }
     }
@@ -1498,6 +1551,10 @@
       /* 60px - 100px - this gives us the space on the bottom without padding  */
       margin-bottom: clamp(3.75rem, 6.2vw, 6.25rem);
       align-items: flex-start;
+    }
+
+    .cs-title {
+      max-width: 20ch;
     }
 
     .cs-picture {
@@ -1602,7 +1659,9 @@
       align-items: center;
       position: relative;
       z-index: 1;
-      transition: transform 0.3s, background-color 0.3s;
+      transition:
+        transform 0.3s,
+        background-color 0.3s;
 
       &:hover {
         background-color: var(--primaryLight);

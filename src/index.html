@@ -11,7 +11,15 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
 {% if client.isProduction %}
-<link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<link
+  rel="preload"
+  href="/assets/css/local.css"
+  as="style"
+  onload="
+    this.onload = null;
+    this.rel = 'stylesheet';
+  "
+/>
 <noscript>
   <link rel="stylesheet" href="/assets/css/local.css" />
 </noscript>
@@ -82,23 +90,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <ul class="cs-card-group">
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img
-            class="cs-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg"
-            alt="icon"
-            width="40"
-            height="40"
-          />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-speed.svg" alt="icon" width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Optimized for Speed</h3>
         <p class="cs-item-text">
-          Loading speed plays a critical role in both retention and search ranking. Despite this the average website loading time is 2.5
-          seconds on desktop and a whopping 8.6 sec on mobile. <br /><br />
-
-          Our websites are hand coded and optimized for a fast and smooth experience, without relying on bulky frameworks or site builders.
-          It's an instant leg up on the competition.
+          Loading speed plays a critical role in both retention and search ranking. Our websites are hand coded and optimized for a fast and
+          smooth experience, without relying on bulky frameworks or site builders.
         </p>
         <a href="" class="cs-link">
           View More
@@ -106,7 +103,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             class="cs-arrow"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg"
+            src="assets/svgs/icon-arrow-right-up.svg"
             alt="icon"
             width="20"
             height="20"
@@ -114,20 +111,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="construction" width="480" height="425" />
+          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img
-            class="cs-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg"
-            alt="icon"
-            width="40"
-            height="40"
-          />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-responsive.svg" alt="icon" width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Fully Responsive</h3>
         <p class="cs-item-text">
@@ -140,7 +129,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             class="cs-arrow"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg"
+            src="assets/svgs/icon-arrow-right-up.svg"
             alt="icon"
             width="20"
             height="20"
@@ -148,20 +137,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="construction" width="480" height="425" />
+          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img
-            class="cs-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg"
-            alt="icon"
-            width="40"
-            height="40"
-          />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-seo.svg" alt="icon" width="40" height="40" />
         </picture>
         <h3 class="cs-h3">SEO Services</h3>
         <p class="cs-item-text">
@@ -174,7 +155,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             class="cs-arrow"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg"
+            src="assets/svgs/icon-arrow-right-up.svg"
             alt="icon"
             width="20"
             height="20"
@@ -182,20 +163,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="construction" width="480" height="425" />
+          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img
-            class="cs-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg"
-            alt="icon"
-            width="40"
-            height="40"
-          />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-social-media.svg" alt="icon" width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Social Media Management</h3>
         <p class="cs-item-text">
@@ -208,7 +181,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             class="cs-arrow"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg"
+            src="assets/svgs/icon-arrow-right-up.svg"
             alt="icon"
             width="20"
             height="20"
@@ -216,20 +189,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="construction" width="480" height="425" />
+          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img
-            class="cs-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg"
-            alt="icon"
-            width="40"
-            height="40"
-          />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-google-ads.svg" alt="icon" width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Google PPC Ads</h3>
         <p class="cs-item-text">
@@ -242,7 +207,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             class="cs-arrow"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg"
+            src="assets/svgs/icon-arrow-right-up.svg"
             alt="icon"
             width="20"
             height="20"
@@ -250,20 +215,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="construction" width="480" height="425" />
+          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img
-            class="cs-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/roof.svg"
-            alt="icon"
-            width="40"
-            height="40"
-          />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-usa.svg" alt="icon" width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Based In The USA</h3>
         <p class="cs-item-text">
@@ -277,7 +234,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             class="cs-arrow"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/upper-right-black-arrow.svg"
+            src="assets/svgs/icon-arrow-right-up.svg"
             alt="icon"
             width="20"
             height="20"
@@ -285,7 +242,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="construction" width="480" height="425" />
+          <img loading="lazy" decoding="async" src="assets/images/hero-bg-m.webp" alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
     </ul>
@@ -336,7 +293,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg"
+              src="assets/svgs/icon-checkmark.svg"
               alt="icon"
               width="32"
               height="32"
@@ -355,7 +312,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg"
+              src="assets/svgs/icon-checkmark.svg"
               alt="icon"
               width="32"
               height="32"
@@ -374,7 +331,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg"
+              src="assets/svgs/icon-checkmark.svg"
               alt="icon"
               width="32"
               height="32"
@@ -392,7 +349,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg"
+              src="assets/svgs/icon-checkmark.svg"
               alt="icon"
               width="32"
               height="32"

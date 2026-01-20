@@ -50,23 +50,9 @@
       content: "";
       width: 100%;
       height: calc(200 / 16 * 1rem);
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(166, 241, 215, 0.2)),
-        to(rgba(166, 241, 215, 0))
-      );
-      background: -o-linear-gradient(
-        top,
-        rgba(166, 241, 215, 0.2) 0%,
-        rgba(166, 241, 215, 0) 100%
-      );
-      background: linear-gradient(
-        to bottom,
-        rgba(166, 241, 215, 0.2) 0%,
-        rgba(166, 241, 215, 0) 100%
-      );
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(166, 241, 215, 0.2)), to(rgba(166, 241, 215, 0)));
+      background: -o-linear-gradient(top, rgba(166, 241, 215, 0.2) 0%, rgba(166, 241, 215, 0) 100%);
+      background: linear-gradient(to bottom, rgba(166, 241, 215, 0.2) 0%, rgba(166, 241, 215, 0) 100%);
       opacity: 1;
       position: absolute;
       display: block;
@@ -224,7 +210,7 @@
       height: calc(724 / 16 * 1em);
       right: calc(-382 / 16 * 1rem);
       /* changes to 172 at large desktop */
-      bottom: calc(-100 / 16 * 1em);
+      bottom: calc(-100 / 16 * 1rem);
 
       &:before {
         /* white border bubble */
@@ -268,8 +254,8 @@
     }
 
     .cs-bubbles2 {
-      width: calc(330 / 16 * 1rem);
-      height: calc(476 / 16 * 1rem);
+      width: calc(330 / 16 * 1em);
+      height: calc(476 / 16 * 1em);
       /* changes to 160px at larger desktop */
       left: calc(-260 / 16 * 1rem);
       /* removed at larger desktop */
@@ -278,8 +264,8 @@
       &:before {
         /* white border bubble */
         content: "";
-        width: calc(330 / 16 * 1rem);
-        height: calc(330 / 16 * 1rem);
+        width: calc(330 / 16 * 1em);
+        height: calc(330 / 16 * 1em);
         background: transparent;
         border: 1px solid #fff;
         border-radius: 50%;
@@ -298,8 +284,8 @@
       &:after {
         /* orange bubble */
         content: "";
-        width: calc(260 / 16 * 1rem);
-        height: calc(260 / 16 * 1rem);
+        width: calc(260 / 16 * 1em);
+        height: calc(260 / 16 * 1em);
         background: var(--primary);
         opacity: 0.8;
         border-radius: 50%;
@@ -463,27 +449,102 @@
   body.dark-mode {
     #hero-1352 {
       &::before {
-        background: -webkit-gradient(
-          linear,
-          left top,
-          left bottom,
-          from(rgba(0, 0, 0, 1)),
-          to(rgba(0, 0, 0, 0))
-        );
-        background: -o-linear-gradient(
-          top,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
       }
 
       .cs-background {
         opacity: 0.5;
+      }
+
+      .cs-bubbles {
+        font-size: 0.01rem;
+      }
+
+      .cs-bubbles1 {
+        right: calc(68 / 16 * 1rem);
+        bottom: calc(284 / 16 * 1rem);
+
+        &:before {
+          box-shadow:
+            #fff 0 0 25px 5px,
+            #ddff00 0 0 5px 1px;
+          background: #fff;
+          opacity: 0.8;
+        }
+
+        &:after {
+          box-shadow:
+            #fff 0 0 25px 5px,
+            #ddff00 0 0 5px 1px;
+          background: #fff;
+          opacity: 0.6;
+          left: 1rem;
+          font-size: 0.8em;
+        }
+      }
+
+      .cs-bubbles2 {
+        top: calc(150 / 16 * 1rem);
+        left: calc(52 / 16 * 1rem);
+
+        &:before {
+          box-shadow:
+            #fff 0 0 25px 5px,
+            #ddff00 0 0 5px 1px;
+          background: #fff;
+          font-size: 1.5em;
+        }
+
+        &:after {
+          box-shadow:
+            #fff 0 0 25px 5px,
+            #ddff00 0 0 5px 1px;
+          background: #fff;
+          top: 5em;
+          left: -1.25rem;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  body.dark-mode {
+    #hero-1352 {
+      .cs-bubbles1 {
+        bottom: calc(80 / 16 * 1rem);
+      }
+
+      .cs-bubbles2 {
+        top: calc(164 / 16 * 1rem);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  body.dark-mode {
+    #hero-1352 {
+      .cs-bubbles2 {
+        top: calc(260 / 16 * 1rem);
+        margin-right: clamp(calc(480 / 16 * 1rem), 31vw, calc(608 / 16 * 1rem));
+        right: 50%;
+        left: auto;
+        bottom: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 81.25rem) {
+  body.dark-mode {
+    #hero-1352 {
+      .cs-bubbles1 {
+        top: auto;
+        bottom: calc(80 / 16 * 1rem);
       }
     }
   }
