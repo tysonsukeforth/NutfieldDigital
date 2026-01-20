@@ -463,7 +463,7 @@
       }
 
       .cs-bubbles1 {
-        right: calc(68 / 16 * 1rem);
+        right: calc(80 / 16 * 1rem);
         bottom: calc(284 / 16 * 1rem);
 
         &:before {
@@ -480,7 +480,7 @@
             #ddff00 0 0 5px 1px;
           background: #fff;
           opacity: 0.6;
-          left: 1rem;
+          left: 5rem;
           font-size: 0.8em;
         }
       }
@@ -503,7 +503,7 @@
             #ddff00 0 0 5px 1px;
           background: #fff;
           top: 5em;
-          left: -1.25rem;
+          left: -2rem;
           font-size: 1em;
         }
       }
