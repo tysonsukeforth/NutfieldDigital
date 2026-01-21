@@ -146,7 +146,9 @@
       bottom: var(--itemPadding);
       right: var(--itemPadding);
       z-index: 1;
-      transition: transform 0.5s, border-radius 0.5s;
+      transition:
+        transform 0.5s,
+        border-radius 0.5s;
 
       &:before {
         content: "";
@@ -264,7 +266,7 @@
         display: block;
         height: 100%;
         width: 100%;
-        background: #1a1a1a;
+        background: var(--dark);
         opacity: 0.84;
         top: 0;
         left: 0;
@@ -385,7 +387,9 @@
         &:before {
           background-color: #000;
           opacity: 0.3;
-          transition: background-color 0.3s, opacity 0.3s;
+          transition:
+            background-color 0.3s,
+            opacity 0.3s;
         }
       }
 
@@ -824,7 +828,10 @@
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
-      transition: hidden 0.3s, opacity 0.3s, transform 0.7s;
+      transition:
+        hidden 0.3s,
+        opacity 0.3s,
+        transform 0.7s;
 
       &.cs-hidden {
         visibility: hidden;
