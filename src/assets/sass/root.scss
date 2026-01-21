@@ -74,7 +74,6 @@
 
   .cs-title {
     font-size: var(--headerFontSize);
-    font-weight: 400;
     line-height: 1.1em;
     text-align: inherit;
     max-width: 43.75rem;
@@ -107,95 +106,141 @@
   }
 
   // Buttons - can be replaced using CodeStitch's "Button" Stitches. Make sure to clear the default .cs-button-solid/outline styles from any new stitches you place.
+
   .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    background-color: var(--primary);
-    width: auto;
-    padding: calc(16 / 16 * 1rem) calc(32 / 16 * 1rem);
+    font-size: calc(16 / 16 * 1rem);
+    line-height: calc(56 / 16 * 1rem);
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: calc(16 / 16 * 1rem);
-    line-height: calc(16 / 16 * 1em);
-    font-weight: bold;
-    border-radius: calc(4 / 16 * 1rem);
+    font-family: var(--headerFont);
     overflow: hidden;
-
-    // Transition Properties
-    color: var(--bodyTextColorWhite);
-    transition: color 0.3s;
-    transition-delay: 0.1s;
-    text-align: center;
-
-    &:hover {
-      color: #fff;
-
-      &:before {
-        width: 100%;
-      }
-    }
-
-    &:before {
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      opacity: 1;
-      display: block;
-      background-color: #000;
-      height: 100%;
-
-      //Transition properties
-      width: 0;
-      transition: width 0.3s;
-    }
-  }
-
-  .cs-button-outline {
-    z-index: 1;
-    position: relative;
+    margin: 0;
+    color: #fff;
+    padding: 0 calc(42 / 16 * 1rem);
+    border-radius: calc(4 / 16 * 1rem) calc(30 / 16 * 1rem) calc(4 / 16 * 1rem);
+    background-color: var(--primary);
     display: inline-block;
-    width: auto;
-    padding: calc(16 / 16 * 1rem) calc(32 / 16 * 1rem);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: calc(16 / 16 * 1rem);
-    line-height: calc(16 / 16 * 1em);
-    font-weight: bold;
-    border: 2px solid #000;
-
-    // Transition Properties
-    color: #000;
+    position: relative;
+    z-index: 1;
     transition: color 0.3s;
-    transition-delay: 0.1s;
-    text-align: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #fff;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
 
     &:hover {
-      color: #fff;
-
+      color: var(--primary);
       &:before {
         width: 100%;
       }
     }
 
-    &:before {
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      opacity: 1;
-      display: block;
-      background-color: #000;
-      height: 100%;
-
-      //Transition properties
-      width: 0;
-      transition: width 0.3s;
+    &.cs-button-light {
+      color: #fff;
+      &:before {
+        background: var(--primaryDark);
+      }
     }
   }
+
+  // .cs-button-outline {
+  //   z-index: 1;
+  //   position: relative;
+  //   display: inline-block;
+  //   width: auto;
+  //   padding: calc(16 / 16 * 1rem) calc(32 / 16 * 1rem);
+  //   text-decoration: none;
+  //   text-transform: uppercase;
+  //   font-size: calc(16 / 16 * 1rem);
+  //   line-height: calc(16 / 16 * 1em);
+  //   font-weight: bold;
+  //   border: 2px solid #000;
+
+  //   // Transition Properties
+  //   color: #000;
+  //   transition: color 0.3s;
+  //   transition-delay: 0.1s;
+  //   text-align: center;
+
+  //   &:hover {
+  //     color: #fff;
+
+  //     &:before {
+  //       width: 100%;
+  //     }
+  //   }
+
+  //   &:before {
+  //     z-index: -1;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     content: "";
+  //     opacity: 1;
+  //     display: block;
+  //     background-color: #000;
+  //     height: 100%;
+
+  //     //Transition properties
+  //     width: 0;
+  //     transition: width 0.3s;
+  //   }
+  // }
+
+  // .cs-button-solid {
+  //   text-align: center;
+  //   font-size: calc(16 / 16 * 1rem);
+  //   /* 46px - 56px */
+  //   line-height: clamp(2.875rem, 8vw, 3.5rem);
+  //   text-decoration: none;
+  //   text-transform: uppercase;
+  //   font-weight: 700;
+  //   min-width: calc(174 / 16 * 1rem);
+  //   margin: 0;
+  //   overflow: hidden;
+  //   color: #fff;
+  //   padding: 0 calc(48 / 16 * 1rem);
+  //   /* prevents padding and border from affecting height and width */
+  //   box-sizing: border-box;
+  //   border-radius: calc(16 / 16 * 1rem);
+  //   border-top-left-radius: 0;
+  //   background-color: var(--primary);
+  //   display: inline-block;
+  //   position: relative;
+  //   z-index: 1;
+
+  //   &:before {
+  //     content: "";
+  //     width: 150%;
+  //     height: 110%;
+  //     background: #fff;
+  //     opacity: 1;
+  //     position: absolute;
+  //     display: block;
+  //     top: 50%;
+  //     left: -165%;
+  //     z-index: -2;
+  //     transform: skew(-45deg) translateY(-50%);
+  //     transition: left 0.3s;
+  //   }
+
+  //   &:hover {
+  //     &:before {
+  //       left: -35%;
+  //     }
+  //   }
+  // }
 
   // Utilities - small classes useful in various common situations
   .cs-color {
@@ -226,6 +271,15 @@
       display: block !important;
     }
 
+    .cs-button-solid.cs-button-light {
+      &:hover {
+        color: var(--primary);
+      }
+      &:before {
+        background: #fff;
+      }
+    }
+
     .cs-button-outline {
       border-color: #fff;
       color: #fff;
@@ -253,6 +307,7 @@
   h5,
   h6 {
     font-family: var(--headerFont);
+    font-weight: 400;
     line-height: 1.2em;
     color: var(--headerColor);
   }
@@ -277,49 +332,6 @@
   button {
     &:hover {
       cursor: pointer;
-    }
-  }
-
-  .cs-button-4 {
-    text-align: center;
-    font-size: calc(16 / 16 * 1rem);
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 8vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    min-width: calc(174 / 16 * 1rem);
-    margin: 0;
-    overflow: hidden;
-    color: #fff;
-    padding: 0 calc(48 / 16 * 1rem);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    border-radius: calc(16 / 16 * 1rem);
-    border-top-left-radius: 0;
-    background-color: #1a1a1a;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-
-    &:before {
-      content: "";
-      width: 150%;
-      height: 110%;
-      background: var(--primary);
-      opacity: 1;
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: -165%;
-      z-index: -2;
-      transform: skew(-45deg) translateY(-50%);
-      transition: left 0.3s;
-    }
-
-    &:hover {
-      &:before {
-        left: -35%;
-      }
     }
   }
 
@@ -1277,46 +1289,6 @@
 
       &.cs-active {
         color: var(--primary);
-      }
-    }
-
-    .cs-button-solid {
-      font-size: calc(16 / 16 * 1rem);
-      font-weight: 700;
-      /* 46px - 56px */
-      line-height: clamp(2.875em, 5.5vw, 3.5em);
-      text-align: center;
-      text-decoration: none;
-      min-width: calc(150 / 16 * 1rem);
-      margin: 0;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-      padding: 0 calc(32 / 16 * 1rem);
-      color: #fff;
-      background-color: var(--primary);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      transition: color 0.3s;
-
-      &:before {
-        content: "";
-        width: 0%;
-        height: 100%;
-        background: #fff;
-        opacity: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
-      }
-
-      &:hover {
-        color: #1a1a1a;
-        &:before {
-          width: 100%;
-        }
       }
     }
   }
