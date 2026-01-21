@@ -1349,109 +1349,107 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0px) {
-  #banner-310 {
-    /* 144px - 252px */
-    padding-top: clamp(9rem, 25vw, 15.75rem);
-    /* 80px - 140px */
-    padding-bottom: clamp(5rem, 13vw, 8.75rem);
+@media only screen and (min-width: 0rem) {
+  #banner-843 {
+    /* 175px - 260px top */
+    padding: clamp(10.9375rem, 20vw, 16.25rem) calc(16 / 16 * 1rem) clamp(6.25rem, 14vw, 12vw);
     position: relative;
     z-index: 1;
+    /* clips svg wave from causing overflow issues */
+    overflow: hidden;
 
     .cs-container {
-      width: 100%;
+      text-align: center;
       max-width: calc(1280 / 16 * 1rem);
+      width: 100%;
       margin: auto;
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: calc(16 / 16 * 1rem);
     }
 
     .cs-int-title {
-      /* 39px - 49px */
-      font-size: clamp(2.4375rem, 4.5vw, 3.0625rem);
-      font-weight: 900;
+      /* 39px - 61px */
+      font-family: var(--headerFont);
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      text-transform: uppercase;
       line-height: 1.2em;
-      text-align: center;
-      max-width: calc(700 / 16 * 1rem);
-      margin: 0 auto calc(12 / 16 * 1rem);
+      text-align: inherit;
+      margin: 0;
       color: var(--bodyTextColorWhite);
       position: relative;
-    }
-
-    .cs-breadcrumbs {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .cs-link {
-      /* 14px - 16px */
-      font-size: clamp(0.875rem, 1.5vw, 1rem);
-      line-height: 1.2em;
-      text-decoration: none;
-      color: var(--bodyTextColorWhite);
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:last-of-type {
-        /* remove the chevron on the last list item */
-        &::after {
-          display: none;
-        }
-      }
-
-      &:after {
-        /* chevron - added as pseudo to make adding and removing them easier */
-        content: "";
-        width: calc(7 / 16 * 1rem);
-        height: calc(12 / 16 * 1rem);
-        margin-left: calc(12 / 16 * 1rem);
-        margin-right: calc(12 / 16 * 1rem);
-        background: url("/assets/svgs/chevron.svg");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      &.cs-active {
-        color: var(--primaryLight);
-      }
     }
 
     .cs-background {
       width: 100%;
       height: 100%;
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
-      display: block;
       z-index: -1;
 
       &:before {
-        /* black overlay box */
+        /* background color overlay */
         content: "";
         width: 100%;
         height: 100%;
-        background: #000;
-        opacity: 0.72;
-        position: absolute;
+        background: #1a1a1a;
+        opacity: 0.64;
         display: block;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 1;
       }
 
       img {
+        width: 100%;
+        height: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
         position: absolute;
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+      }
+    }
+
+    .cs-wave {
+      /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
+      width: calc(768 / 16 * 1rem);
+      height: auto;
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #banner-843 {
+    .cs-wave {
+      width: 100%;
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #banner-843 {
+      .cs-wave {
+        path {
+          fill: var(--dark);
+        }
       }
     }
   }
