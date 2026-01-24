@@ -72,6 +72,9 @@
           <a class="cs-link" href="/about">About Us</a>
         </li>
         <li class="cs-li">
+          <a class="cs-link" href="/faqs">FAQs</a>
+        </li>
+        <li class="cs-li">
           <a class="cs-link" href="/contact">Contact</a>
         </li>
       </ul>
@@ -97,7 +100,7 @@
           </span>
         </li>
         <li class="cs-li">
-          <a class="cs-link" href="tel:555-438-0436">
+          <a class="cs-link" href="tel:{{ client.phoneForTel }}">
             <img
               class="cs-contact-icon"
               aria-hidden="true"
@@ -108,11 +111,11 @@
               width="20"
               height="20"
             />
-            555-438-0436
+            {{ client.phoneFormatted }}
           </a>
         </li>
         <li class="cs-li">
-          <a class="cs-link" href="mailto:nutfielddigital@gmail.com">
+          <a class="cs-link" href="mailto:{{ client.email }}">
             <img
               class="cs-icon"
               aria-hidden="true"
@@ -123,7 +126,7 @@
               width="20"
               height="20"
             />
-            nutfielddigital@gmail.com
+            {{ client.email }}
           </a>
         </li>
         <li class="cs-li">

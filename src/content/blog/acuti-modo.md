@@ -8,6 +8,7 @@ tags:
     - post
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
+eleventyExcludeFromCollections: true
 ---
 
 ## Lacerans aliter tetigit praeterea rite

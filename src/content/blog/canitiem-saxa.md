@@ -9,6 +9,7 @@ tags:
     - featured
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
+eleventyExcludeFromCollections: true
 ---
 
 ## Aut inter Petraeum
