@@ -61,7 +61,8 @@
     .cs-option {
       /* 16px - 20px */
       font-size: clamp(1rem, 2vw, 1.25rem);
-      font-weight: 700;
+      font-family: var(--headerFont);
+      text-transform: uppercase;
       /* 50px - 72px */
       line-height: 1.2em;
       /* prevents border from affecting height and width */
