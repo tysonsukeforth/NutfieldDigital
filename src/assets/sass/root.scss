@@ -38,6 +38,7 @@
 
     --headerFont: "Cal Sans", Arial, sans-serif;
     --bodyFont: "Lato", Arial, sans-serif;
+    --accentFont: "Funnel Display", "Cal Sans", Arial, sans-serif;
   }
 
   html,
@@ -388,6 +389,15 @@
     font-style: normal;
     font-weight: 400;
     src: url("/assets/fonts/cal-sans-v2-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* funnel-display-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Funnel Display";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/funnel-display-v3-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 }
 
@@ -787,7 +797,7 @@
     }
 
     .cs-li-link {
-      font-family: var(--headerFont);
+      font-family: var(--accentFont);
       font-size: calc(20 / 16 * 1rem);
       line-height: 1.2em;
       text-decoration: none;
@@ -1281,7 +1291,7 @@
     }
 
     .cs-li-link {
-      font-family: var(--headerFont);
+      font-family: var(--accentFont);
       font-size: calc(16 / 16 * 1rem);
       line-height: 1.5em;
       text-decoration: none;
@@ -1373,9 +1383,8 @@
 
     .cs-int-title {
       /* 39px - 61px */
-      font-family: var(--headerFont);
+      font-family: var(--accentFont);
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-      text-transform: uppercase;
       line-height: 1.2em;
       text-align: inherit;
       margin: 0;
@@ -1772,9 +1781,9 @@
     }
 
     .cs-header {
+      font-family: var(--accentFont);
       font-size: calc(20 / 16 * 1rem);
       line-height: 1.5em;
-      font-weight: 700;
       margin: 0 0 calc(20 / 16 * 1rem) 0;
       color: var(--bodyTextColorWhite);
       display: block;
