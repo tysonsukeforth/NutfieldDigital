@@ -467,6 +467,10 @@
       max-width: 26ch;
     }
 
+    .cs-topper {
+      color: color-mix(in srgb, var(--primary) 100%, black 4%);
+    }
+
     .cs-text {
       margin-bottom: calc(16 / 16 * 1rem);
       &:last-of-type {
@@ -1138,6 +1142,9 @@
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
     }
+    .cs-topper {
+      color: color-mix(in srgb, var(--primary) 100%, black 10%);
+    }
 
     .cs-card-group {
       width: 100%;
@@ -1234,7 +1241,7 @@
 
       .cs-li-img {
         /* turns the check mark white */
-        filter: brightness(900%);
+        filter: brightness(9999%);
       }
     }
 
