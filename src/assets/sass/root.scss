@@ -1188,6 +1188,7 @@
 
     .cs-contact-group {
       display: flex;
+      margin-left: auto;
       justify-content: center;
       align-items: center;
       gap: calc(24 / 16 * 1rem);
@@ -1257,15 +1258,14 @@
       transition: opacity 0.3s;
     }
 
+    .cs-button-solid {
+      display: none;
+    }
+
     .cs-ul-wrapper {
       height: 100%;
       display: flex;
       align-items: center;
-      /* absolutely positioned to be dead center */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
 
     .cs-ul {
@@ -1315,8 +1315,20 @@
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #cs-navigation {
+    .cs-ul-wrapper {
+      /* absolutely positioned to be dead center */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     .cs-social {
       display: flex;
+    }
+
+    .cs-button-solid {
+      display: inline-block;
     }
   }
 }
