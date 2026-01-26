@@ -54,12 +54,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <picture class="cs-picture">
       <source
         media="(max-width: 600px)"
-        srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 217, height: 157 }) | avif %}"
+        srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | avif %}"
         type="image/avif"
       />
       <source
         media="(max-width: 600px)"
-        srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 217, height: 157 }) | webp %}"
+        srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | webp %}"
         type="image/webp"
       />
       <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero-fg.webp' | avif %}" type="image/avif" />

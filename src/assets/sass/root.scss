@@ -155,93 +155,49 @@
     }
   }
 
-  // .cs-button-outline {
-  //   z-index: 1;
-  //   position: relative;
-  //   display: inline-block;
-  //   width: auto;
-  //   padding: calc(16 / 16 * 1rem) calc(32 / 16 * 1rem);
-  //   text-decoration: none;
-  //   text-transform: uppercase;
-  //   font-size: calc(16 / 16 * 1rem);
-  //   line-height: calc(16 / 16 * 1em);
-  //   font-weight: bold;
-  //   border: 2px solid #000;
+  .cs-button-outline {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: calc(16 / 16 * 1rem) calc(32 / 16 * 1rem);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: calc(16 / 16 * 1rem);
+    line-height: calc(16 / 16 * 1em);
+    font-weight: bold;
+    border: 2px solid #000;
 
-  //   // Transition Properties
-  //   color: #000;
-  //   transition: color 0.3s;
-  //   transition-delay: 0.1s;
-  //   text-align: center;
+    // Transition Properties
+    color: #000;
+    transition: color 0.3s;
+    transition-delay: 0.1s;
+    text-align: center;
 
-  //   &:hover {
-  //     color: #fff;
+    &:hover {
+      color: #fff;
 
-  //     &:before {
-  //       width: 100%;
-  //     }
-  //   }
+      &:before {
+        width: 100%;
+      }
+    }
 
-  //   &:before {
-  //     z-index: -1;
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     content: "";
-  //     opacity: 1;
-  //     display: block;
-  //     background-color: #000;
-  //     height: 100%;
+    &:before {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      opacity: 1;
+      display: block;
+      background-color: #000;
+      height: 100%;
 
-  //     //Transition properties
-  //     width: 0;
-  //     transition: width 0.3s;
-  //   }
-  // }
-
-  // .cs-button-solid {
-  //   text-align: center;
-  //   font-size: calc(16 / 16 * 1rem);
-  //   /* 46px - 56px */
-  //   line-height: clamp(2.875rem, 8vw, 3.5rem);
-  //   text-decoration: none;
-  //   text-transform: uppercase;
-  //   font-weight: 700;
-  //   min-width: calc(174 / 16 * 1rem);
-  //   margin: 0;
-  //   overflow: hidden;
-  //   color: #fff;
-  //   padding: 0 calc(48 / 16 * 1rem);
-  //   /* prevents padding and border from affecting height and width */
-  //   box-sizing: border-box;
-  //   border-radius: calc(16 / 16 * 1rem);
-  //   border-top-left-radius: 0;
-  //   background-color: var(--primary);
-  //   display: inline-block;
-  //   position: relative;
-  //   z-index: 1;
-
-  //   &:before {
-  //     content: "";
-  //     width: 150%;
-  //     height: 110%;
-  //     background: #fff;
-  //     opacity: 1;
-  //     position: absolute;
-  //     display: block;
-  //     top: 50%;
-  //     left: -165%;
-  //     z-index: -2;
-  //     transform: skew(-45deg) translateY(-50%);
-  //     transition: left 0.3s;
-  //   }
-
-  //   &:hover {
-  //     &:before {
-  //       left: -35%;
-  //     }
-  //   }
-  // }
+      //Transition properties
+      width: 0;
+      transition: width 0.3s;
+    }
+  }
 
   // Utilities - small classes useful in various common situations
   .cs-color {
@@ -358,7 +314,7 @@
 
   /* lato-regular - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Lato";
     font-style: normal;
     font-weight: 400;
@@ -367,7 +323,7 @@
 
   /* lato-italic - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Lato";
     font-style: italic;
     font-weight: 400;
@@ -376,7 +332,7 @@
 
   /* lato-700 - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: "Lato";
     font-style: normal;
     font-weight: 700;
