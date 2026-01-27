@@ -90,7 +90,9 @@
       color: #767676;
       display: block;
       position: relative;
+    }
 
+    a.cs-link {
       &:hover {
         text-decoration: underline;
       }

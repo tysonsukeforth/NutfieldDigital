@@ -81,7 +81,7 @@
 
     .cs-item {
       /* place this in a variable to reuse for the s-icon-wrapper placement */
-      --itemPadding: clamp(1rem, 3.5vw, 3rem);
+      --itemPadding: clamp(1.5rem, 3.5vw, 3rem);
       width: 100%;
       text-align: left;
       list-style: none;

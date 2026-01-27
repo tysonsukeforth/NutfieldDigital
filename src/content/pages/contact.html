@@ -55,7 +55,7 @@ permalink: "/contact/"
           <picture class="cs-icon-wrapper">
             <img
               aria-hidden="true"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg"
+              src="/assets/svgs/phone-76.svg"
               alt="phone icon"
               class="cs-icon"
               width="40"
@@ -65,14 +65,14 @@ permalink: "/contact/"
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Phone</span>
-            <a href="tel:555-438-0436" class="cs-link">(555) 438-0436 </a>
+            <a href="tel:{{ client.phoneForTel }}" class="cs-link">{{ client.phoneFormatted }}</a>
           </div>
         </li>
         <li class="cs-li">
           <picture class="cs-icon-wrapper">
             <img
               aria-hidden="true"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg"
+              src="/assets/svgs/mail-76.svg"
               alt="address icon"
               class="cs-icon"
               width="40"
@@ -82,14 +82,14 @@ permalink: "/contact/"
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Email</span>
-            <a href="mailto:nutfielddigital@gmail.com" class="cs-link">Email Us Directly</a>
+            <a href="mailto:{{ client.email }}" class="cs-link">Email Us Directly</a>
           </div>
         </li>
         <li class="cs-li">
           <picture class="cs-icon-wrapper">
             <img
               aria-hidden="true"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg"
+              src="/assets/svgs/pin-76.svg"
               alt="address icon"
               class="cs-icon"
               width="40"
@@ -126,7 +126,7 @@ permalink: "/contact/"
       </label>
       <div class="h-captcha" data-captcha="true"></div>
       <input type="hidden" name="subject" value="Contact Request for Nutfield Digital" />
-      <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+      <button class="cs-button-solid cs-button-light cs-submit" type="submit">Send Message</button>
     </form>
   </div>
 

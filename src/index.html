@@ -380,29 +380,21 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <!--Mobile Image-->
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 223, height: 297}) | avif %}"
+          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/temp-me.webp' | resize({width: 446, height: 594}) | avif %} 2x"
           type="image/avif"
         />
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 223, height: 297}) | webp %}"
+          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/temp-me.webp' | resize({width: 446, height: 594}) | webp %} 2x"
           type="image/webp"
         />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
-          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 586, height: 781}) | avif %}"
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 586, height: 781}) | webp %}"
-          type="image/webp"
-        />
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/temp-me.webp' | avif %}" type="image/avif" />
+        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/temp-me.webp' | webp %}" type="image/webp" />
         <img
           loading="lazy"
           decoding="async"
-          src="{% getUrl '/assets/images/temp-me.webp' | resize({width: 586, height: 781}) | avif %}"
+          src="{% getUrl '/assets/images/temp-me.webp' | avif %}"
           alt="people"
           width="586"
           height="781"
@@ -524,18 +516,18 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <!--Mobile Image-->
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/lighthouse-temp.webp' | resize({ width: 216, height: 287 }) | avif %}"
+          srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | avif %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | avif %} 2x"
           type="image/avif"
         />
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/lighthouse-temp.webp' | resize({ width: 216, height: 287 }) | webp %}"
+          srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | webp %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | webp %} 2x"
           type="image/webp"
         />
         <!--Tablet and above Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse-temp.webp' | avif %}" type="image/avif" />
-        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse-temp.webp' | webp %}" type="image/webp" />
-        <img loading="lazy" decoding="async" src="assets/images/lighthouse-temp.webp" alt="body builder" width="562" height="568" />
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | avif %}" type="image/avif" />
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | webp %}" type="image/webp" />
+        <img loading="lazy" decoding="async" src="assets/images/lighthouse.webp" alt="body builder" width="520" height="787" />
       </picture>
     </div>
     <div class="cs-content">
