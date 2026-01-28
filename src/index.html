@@ -380,21 +380,29 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <!--Mobile Image-->
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/temp-me.webp' | resize({width: 446, height: 594}) | avif %} 2x"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | avif %} 2x"
           type="image/avif"
         />
         <source
           media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/temp-me.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/temp-me.webp' | resize({width: 446, height: 594}) | webp %} 2x"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | webp %} 2x"
           type="image/webp"
         />
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/temp-me.webp' | avif %}" type="image/avif" />
-        <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/temp-me.webp' | webp %}" type="image/webp" />
+        <source
+          media="(min-width: 601px)"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
+          type="image/avif"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | webp %}"
+          type="image/webp"
+        />
         <img
           loading="lazy"
           decoding="async"
-          src="{% getUrl '/assets/images/temp-me.webp' | avif %}"
+          src="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
           alt="people"
           width="586"
           height="781"
