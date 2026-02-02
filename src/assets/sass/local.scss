@@ -26,6 +26,7 @@
       left: 0;
       z-index: -1;
       background-color: #001200;
+      transition: background-color 0.3s;
     }
 
     .cs-container {
@@ -362,6 +363,9 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
     #services-2279 {
+      &::before {
+        background-color: #000c00;
+      }
       .cs-item {
         background-color: var(--dark);
         border-color: rgba(255, 255, 255, 0.2);
