@@ -964,7 +964,7 @@
       /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
       // columns: 2;
       position: absolute;
-      top: 100%;
+      top: 250%;
       z-index: -100;
       overflow: hidden;
       transform: scaleY(0);
@@ -1277,6 +1277,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    .cs-drop-ul {
+      top: 100%;
     }
 
     .cs-social {
