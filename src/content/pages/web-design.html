@@ -1,0 +1,369 @@
+---
+title: "Web Design | Nutfield Digital"
+description: "Small Business Websites starting at $0 down and $150/month. 100% hand-coded, optimized for speed and SEO. No page builders or WordPress. Get a custom website today!"
+permalink: "/web-design/"
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="preload" as="image" href="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 640, height: 600 }) | avif %}" />
+<link rel="preload" as="image" href="{% getUrl '/assets/images/headshot-temp.webp' | resize({ width: 482, height: 536 }) | avif %}" />
+<link rel="stylesheet" href="/assets/css/webdesign.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-843">
+  <div class="cs-container">
+    <span class="cs-int-title">Web Design</span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background" aria-hidden="true">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="/assets/images/hero-bg-m.webp" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="/assets/images/hero-bg.webp" />
+    <img loading="lazy" decoding="async" src="/assets/images/hero-bg.webp" alt="yoga" width="1920" height="1280" />
+  </picture>
+  <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+  <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z"
+      fill="#ffffff"
+    />
+  </svg>
+</div>
+
+<!-- ============================================ -->
+<!--                What We Offer                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1362">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-background">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | avif %} 2x"
+          type="image/avif"
+        />
+        <source
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | webp %} 2x"
+          type="image/webp"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
+          type="image/avif"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | webp %}"
+          type="image/webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
+          alt="people"
+          width="586"
+          height="781"
+        />
+      </picture>
+      <div class="cs-box">
+        <span class="cs-name">Tyson Sukeforth</span>
+        <span class="cs-desc">Owner, Lead Developer</span>
+      </div>
+    </div>
+    <div class="cs-content">
+      <section class="hero">
+        <h1 class="cs-title">Web Design That's Actually Built for Your Business</h1>
+        <h2>Custom-Coded Websites That Look Beautiful, Load Fast, and Just Work</h2>
+
+        <p class="cs-text">
+          You don't need another bloated WordPress site held together with 47 plugins. You don't need the "latest JavaScript framework"
+          that'll be obsolete next year. And you definitely don't need to pay enterprise prices for features you'll never use.
+        </p>
+
+        <p class="cs-text">
+          What you need is a website that loads instantly, looks professional, and helps your business grow without the complexity, security
+          headaches, or ongoing maintenance that come with conventional site builders.
+        </p>
+
+        <p class="cs-text">
+          At Nutfield Digital, we build websites the right way: custom-coded, purpose-built, and laser-focused on what actually matters to
+          your unique business. Real code. Real results. Real people working with real people.
+        </p>
+      </section>
+
+      <section class="problem">
+        <h2>The Problem With "Easy" Website Builders</h2>
+
+        <p class="cs-text">
+          WordPress powers 43% of the web, but that doesn't make it the right choice for your business. The truth? Most small businesses
+          don't need a database-driven content management system, theme compatibility issues, or constant plugin updates.
+        </p>
+
+        <p class="cs-text">Here's what typically happens with site builders:</p>
+        <ul>
+          <li>Your "simple" site loads slowly because it's hauling unnecessary code and unoptimized images</li>
+          <li>Plugins conflict with each other, breaking your site at the worst times</li>
+          <li>Security vulnerabilities require constant updates and vigilance</li>
+          <li>Themes limit your design options to what someone else decided</li>
+          <li>To offset the slow speeds, hosting services pitch higher tier options driving up the price</li>
+          <li>You're paying monthly fees for features you don't use</li>
+        </ul>
+
+        <p class="cs-text"><strong>There's a better way.</strong></p>
+      </section>
+
+      <section class="solution">
+        <h2>Custom Code: Leaner, Faster, Safer</h2>
+
+        <p class="cs-text">
+          We write clean HTML and CSS—the fundamental building blocks of the web—tailored specifically to your needs. No bloat. No
+          dependencies. No unnecessary complexity.
+        </p>
+
+        <p class="cs-text"><strong>The result?</strong> Websites that are:</p>
+
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <h3 class="cs-h3">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/icon-checkmark.svg"
+                alt="icon"
+                width="32"
+                height="32"
+              />
+              Lightning Fast
+            </h3>
+            <p class="cs-item-text">
+              Sites that take more than 3 seconds to load can lose 50% of their traffic. We optimize our code and images to load in
+              milliseconds, not seconds. No database queries. No server-side processing. No waiting. Just instant page loads that keep
+              visitors engaged and search engines happy. When your site loads in under a second, everyone wins.
+            </p>
+          </li>
+          <li class="cs-item">
+            <h3 class="cs-h3">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/icon-checkmark.svg"
+                alt="icon"
+                width="32"
+                height="32"
+              />
+              Better Search Ranking
+            </h3>
+            <p class="cs-item-text">
+              Instant loading isn't just great for your users. Google rewards fast-loading sites with higher rankings, and Google ads charge
+              less per click for better performing landing pages. A custom-coded site optimized for speed gives you a competitive edge in
+              search results, helping more potential customers find your business online.
+            </p>
+          </li>
+          <li class="cs-item">
+            <h3 class="cs-h3">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/icon-checkmark.svg"
+                alt="icon"
+                width="32"
+                height="32"
+              />
+              Rock Solid Security
+            </h3>
+            <p class="cs-item-text">
+              Static websites have almost nothing to hack. No login pages. No databases to exploit. No plugins with security holes. No
+              outdated software vulnerabilities. There's no attack angle for bad actors to target.
+            </p>
+          </li>
+          <li class="cs-item">
+            <h3 class="cs-h3">
+              <img
+                class="cs-h3-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/assets/svgs/icon-checkmark.svg"
+                alt="icon"
+                width="32"
+                height="32"
+              />
+              Remarkably Reliable
+            </h3>
+            <p class="cs-item-text">
+              Without moving parts, there's less to break. No plugin conflicts. No compatibility issues after updates. No "white screen of
+              death" on Monday morning. Your website just works, day after day, year after year.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="design-philosophy">
+        <h2>Form Meets Function: Beautiful AND Fast</h2>
+
+        <p class="cs-text">
+          We believe great design isn't about choosing between aesthetics and performance. You shouldn't have to sacrifice speed for beauty
+          or settle for ugly-but-functional.
+        </p>
+
+        <p class="cs-text">Every website we build is:</p>
+        <ul>
+          <li><strong>Visually distinctive</strong> – Your brand deserves better than another generic looking template</li>
+          <li><strong>Blazingly fast</strong> – Because first impressions happen in under 3 seconds</li>
+          <li>
+            <strong>Mobile perfect</strong> – Two-thirds of all web traffic comes from mobile devices. Your site should feel like at home on
+            any device.
+          </li>
+          <li><strong>Easy to read</strong> – Clear typography, thoughtful spacing, content that breathes</li>
+          <li><strong>Strategically structured</strong> – Beautiful design that guides visitors naturally toward taking action</li>
+        </ul>
+
+        <p class="cs-text">
+          The best websites feel effortless. They load instantly, look polished, and make it easy for visitors to find what they need.
+          That's what Nutfield Digital enables: complete creative freedom married to exceptional performance.
+        </p>
+      </section>
+
+      <section class="small-business-focus">
+        <h2>Built for Small Business Reality</h2>
+
+        <p class="cs-text">Let's be honest about what most small businesses actually need.</p>
+
+        <p class="cs-text"><strong>You probably don't need:</strong></p>
+        <ul>
+          <li>A complex CMS with user roles and permissions</li>
+          <li>Huge e-commerce packages for 500+ products and inventory management</li>
+          <li>Membership portals with subscription tiers</li>
+          <li>Multi-language support across 12 countries</li>
+          <li>Integration with 47 different enterprise software systems</li>
+        </ul>
+
+        <p class="cs-text"><strong>You probably do need:</strong></p>
+        <ul>
+          <li>A professional website that loads fast and looks great</li>
+          <li>Clear information about what you do and who you serve</li>
+          <li>Easy ways for customers to contact you or take action</li>
+          <li>Mobile-friendly design that works on any device</li>
+          <li>Updates handled quickly when you need them, without learning another platform</li>
+          <li>Something reliable that doesn't require constant babysitting</li>
+        </ul>
+
+        <p class="cs-text">
+          That's exactly what we build. Purpose-built websites for real businesses, not over-engineered platforms trying to be everything
+          for everyone.
+        </p>
+      </section>
+
+      <section class="updates">
+        <h2>Updates Without the Headache</h2>
+
+        <p class="cs-text">You didn't start your business to become a web developer.</p>
+
+        <p class="cs-text">
+          You're an expert in what you do—plumbing, consulting, landscaping, accounting, whatever your trade. Learning to navigate a CMS,
+          troubleshoot broken formatting, or figure out why your image won't upload? That's not a valuable use of your time.
+        </p>
+
+        <p class="cs-text"><strong>We handle all of that for you.</strong></p>
+
+        <p class="cs-text">
+          With our <strong>$0 down, $150/month subscription</strong>, unlimited edits are built right in. New service offering? Updated
+          hours? Fresh testimonial? Team photo? Menu changes? Just send us a quick email or text, and we'll have it updated ASAP. For those
+          that prefer to pay upfront, unlimited edits can also be added on to our Lump Sum package.
+        </p>
+
+        <p class="cs-text">
+          No login credentials to remember. No tutorials to watch. No "why did my formatting break?" frustration. You're free to focus on
+          what actually makes you money; serving your customers and growing your business.
+        </p>
+      </section>
+
+      <section class="who-we-work-with">
+        <h2>Who We Work With</h2>
+
+        <p class="cs-text">
+          We're people working with people. Small business owners, solo professionals, local companies, and growing teams who want a website
+          that works without drama.
+        </p>
+
+        <p class="cs-text">You might be:</p>
+        <ul>
+          <li>A local service business ready to look more professional online</li>
+          <li>A consultant or freelancer who needs credibility and easy contact options</li>
+          <li>A small company outgrowing that site your cousin's friend built in 2018</li>
+          <li>An entrepreneur launching something new without a Silicon Valley budget</li>
+          <li>Anyone tired of website headaches and ready for something that just works</li>
+        </ul>
+
+        <p class="cs-text">
+          If you value quality over quantity, simplicity over complexity, and long term partnerships over one-night-stand service, we'll get
+          along great.
+        </p>
+      </section>
+
+      <section class="benefits">
+        <h2>What This Means for Your Business</h2>
+
+        <h3>Better User Experience</h3>
+        <p class="cs-text">
+          Fast-loading pages keep visitors engaged. Clean design builds trust. Easy navigation helps people find what they need. It all adds
+          up to more inquiries, more customers, more growth.
+        </p>
+
+        <h3>Lower Long-Term Costs</h3>
+        <p class="cs-text">No surprise expenses. Predictable monthly investment or straightforward one-time payment—your choice.</p>
+
+        <h3>Peace of Mind</h3>
+        <p class="cs-text">
+          Your website just works. No surprise breakages. No security scares. No emergency calls because something updated and broke
+          everything.
+        </p>
+
+        <h3>Time Back in Your Day</h3>
+        <p class="cs-text">
+          When we handle updates, you don't waste hours trying to figure out web platforms. Your expertise is worth more than that.
+        </p>
+
+        <h3>Professional Presence</h3>
+        <p class="cs-text">
+          A custom-built site signals that you take your business seriously. It builds credibility in ways that templated sites simply can't
+          match.
+        </p>
+      </section>
+
+      <section class="cta">
+        <h2>Ready for a Website That Works?</h2>
+
+        <p class="cs-text">If you're tired of slow, complicated, or just plain frustrating websites, let's talk.</p>
+
+        <p class="cs-text">
+          No pressure. No sales pitch. Just a straightforward conversation about what you need and whether we're the right fit to build it.
+        </p>
+
+        <p class="cs-text">
+          <a href="/contact">Get started for $0 down, $150/month with unlimited edits included</a> – or ask about our Lump Sum package.
+        </p>
+      </section>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+{% include 'sections/cta.html' %} {% endblock %}
