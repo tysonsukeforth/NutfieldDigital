@@ -1,8 +1,12 @@
 ---
 title: "Small Business Websites with Big Results | Nutfield Digital | Derry, NH"
-description: "Small Business Websites starting at $0 down and $150/month. 100% hand-coded, optimized for speed and SEO. No page builders or WordPress. Get a custom website today!"
+description: "Small Business Websites starting at $0 down and $150/month. 100% hand-coded, optimized for speed and SEO.
+No page builders or WordPress. Get a custom website today!"
 permalink: "/"
-tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+preloadImg: /assets/svgs/Logo.svg
+tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for
+automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is
+included in the sitemap generation
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -10,15 +14,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
 {% if client.isProduction %}
-<link
-  rel="preload"
-  href="/assets/css/local.css"
-  as="style"
-  onload="
+<link rel="preload" href="/assets/css/local.css" as="style" onload="
     this.onload = null;
     this.rel = 'stylesheet';
-  "
-/>
+  " />
 <noscript>
   <link rel="stylesheet" href="/assets/css/local.css" />
 </noscript>
@@ -41,7 +40,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <span class="cs-topper">Real Experts, Real Solutions</span>
       <h1 class="cs-title">Small Business <br />Web Design</h1>
       <p class="cs-text">
-        No page builders or WordPress - We offer superior 100% hand-coded websites with starting at $150/mo and no money down.
+        No page builders or WordPress - We offer superior 100% hand-coded websites with starting at $150/mo and no money
+        down.
       </p>
       <p class="cs-text">
         We're real experts, here to partner with you for the long haul to continuously grow your small business success.
@@ -49,27 +49,16 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <a href="/contact" class="cs-button-solid" aria-label="Get Started">Get Started</a>
     </div>
     <picture class="cs-picture">
-      <source
-        media="(max-width: 600px)"
+      <source media="(max-width: 600px)"
         srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | avif %}"
-        type="image/avif"
-      />
-      <source
-        media="(max-width: 600px)"
+        type="image/avif" />
+      <source media="(max-width: 600px)"
         srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | webp %}"
-        type="image/webp"
-      />
+        type="image/webp" />
       <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero-fg.webp' | avif %}" type="image/avif" />
       <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero-fg.webp' | webp %}" type="image/webp" />
-      <img
-        aria-hidden="true"
-        decoding="async"
-        fetchpriority="high"
-        src="assets/images/hero-fg.webp"
-        alt="squirrel"
-        width="960"
-        height="694"
-      />
+      <img aria-hidden="true" decoding="async" fetchpriority="high" src="assets/images/hero-fg.webp" alt="squirrel"
+        width="960" height="694" />
     </picture>
   </div>
   <!--Bubble Groups-->
@@ -79,7 +68,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
   <picture class="cs-background">
     <source media="(max-width: 767px)" srcset="assets/images/hero-bg-m.webp" />
     <source media="(min-width: 768px)" srcset="assets/images/hero-bg.webp" />
-    <img decoding="async" src="assets/images/hero-bg.webp" alt="abstract background" width="1920" height="1280" aria-hidden="true" />
+    <img decoding="async" src="assets/images/hero-bg.webp" alt="abstract background" width="1920" height="1280"
+      aria-hidden="true" />
   </picture>
 </section>
 
@@ -94,272 +84,192 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <span class="cs-topper">What We Do</span>
       <h2 class="cs-title">Never Worry About Your Website Again</h2>
       <p class="cs-text">
-        Your website should be an asset, not a chore. Nutfield Digital gets you up and running fast with a 100% hand coded website optimized
-        for performance and SEO to start growing your business. We then stay with you to tackle all your edits and upkeep.
+        Your website should be an asset, not a chore. Nutfield Digital gets you up and running fast with a 100% hand
+        coded website optimized
+        for performance and SEO to start growing your business. We then stay with you to tackle all your edits and
+        upkeep.
       </p>
       <p class="cs-text">
-        We're here to create long term relationships with our clients and help grow their business over time. And by having us do what we do
+        We're here to create long term relationships with our clients and help grow their business over time. And by
+        having us do what we do
         best, you can concentrate on the business you do best. That's a win-win.
       </p>
     </div>
     <ul class="cs-card-group">
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-speed.svg" alt="icon" width="40" height="40" />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-speed.svg" alt="icon" width="40"
+            height="40" />
         </picture>
         <h3 class="cs-h3">Optimized for Speed</h3>
         <p class="cs-item-text">
-          Loading speed plays a critical role in both retention and search ranking. Our websites are hand coded and optimized for a fast and
+          Loading speed plays a critical role in both retention and search ranking. Our websites are hand coded and
+          optimized for a fast and
           smooth experience, without relying on bulky frameworks or site builders.
         </p>
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up.svg" alt="icon"
+            width="20" height="20" />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <source
-            media="(max-width: 600px)"
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
-          />
-          <source
-            media="(max-width: 600px)"
+            type="avif" />
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
+            type="webp" />
+          <img loading="lazy" decoding="async"
             src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
-          />
+            alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-responsive.svg" alt="icon" width="40" height="40" />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-responsive.svg" alt="icon"
+            width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Fully Responsive</h3>
         <p class="cs-item-text">
-          All our sites are designed mobile-first and fully responsive. Whether your customers are on their phone, tablet, desktop, or heck
+          All our sites are designed mobile-first and fully responsive. Whether your customers are on their phone,
+          tablet, desktop, or heck
           a smart refrigerator, your users will have a full and optimized experience.
         </p>
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up.svg" alt="icon"
+            width="20" height="20" />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <source
-            media="(max-width: 600px)"
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
-          />
-          <source
-            media="(max-width: 600px)"
+            type="avif" />
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
+            type="webp" />
+          <img loading="lazy" decoding="async"
             src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
-          />
+            alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-seo.svg" alt="icon" width="40" height="40" />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-seo.svg" alt="icon" width="40"
+            height="40" />
         </picture>
         <h3 class="cs-h3">SEO Services</h3>
         <p class="cs-item-text">
-          Search engine optimization is more complex than ever and always changing. We can help get you on the map, literally. Get ranked
+          Search engine optimization is more complex than ever and always changing. We can help get you on the map,
+          literally. Get ranked
           search results and the Google Map Pack with our SEO services.
         </p>
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="/assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/icon-arrow-right-up.svg" alt="icon"
+            width="20" height="20" />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <source
-            media="(max-width: 600px)"
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
-          />
-          <source
-            media="(max-width: 600px)"
+            type="avif" />
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
+            type="webp" />
+          <img loading="lazy" decoding="async"
             src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
-          />
+            alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-social-media.svg" alt="icon" width="40" height="40" />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-social-media.svg" alt="icon"
+            width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Social Media Management</h3>
         <p class="cs-item-text">
-          Want a direct approach to growing your online outreach? We partner with Social Media experts that can write and post new content
+          Want a direct approach to growing your online outreach? We partner with Social Media experts that can write
+          and post new content
           for you weekly and engage with your community.
         </p>
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up.svg" alt="icon"
+            width="20" height="20" />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <source
-            media="(max-width: 600px)"
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
-          />
-          <source
-            media="(max-width: 600px)"
+            type="avif" />
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
+            type="webp" />
+          <img loading="lazy" decoding="async"
             src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
-          />
+            alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-google-ads.svg" alt="icon" width="40" height="40" />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-google-ads.svg" alt="icon"
+            width="40" height="40" />
         </picture>
         <h3 class="cs-h3">Google PPC Ads</h3>
         <p class="cs-item-text">
-          Boost your customer base with a targeted Google Ad campaign. Our researchers will find and target the most cost effective search
+          Boost your customer base with a targeted Google Ad campaign. Our researchers will find and target the most
+          cost effective search
           terms for your campaign.
         </p>
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up.svg" alt="icon"
+            width="20" height="20" />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <source
-            media="(max-width: 600px)"
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
-          />
-          <source
-            media="(max-width: 600px)"
+            type="avif" />
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
+            type="webp" />
+          <img loading="lazy" decoding="async"
             src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
-          />
+            alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
       <li class="cs-item">
         <picture class="cs-icon-wrapper">
-          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-usa.svg" alt="icon" width="40" height="40" />
+          <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-usa.svg" alt="icon" width="40"
+            height="40" />
         </picture>
         <h3 class="cs-h3">Based In The USA</h3>
         <p class="cs-item-text">
-          We don't cut corners with things like cheap outsourcing. We and all of our service partners are based right here in the US. We're
-          here to be your web resource. You can call us 7 days a week. And when you do, you'll be reaching me, the owner and lead developer,
+          We don't cut corners with things like cheap outsourcing. We and all of our service partners are based right
+          here in the US. We're
+          here to be your web resource. You can call us 7 days a week. And when you do, you'll be reaching me, the owner
+          and lead developer,
           personally. No robots, no phone trees.
         </p>
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up.svg" alt="icon"
+            width="20" height="20" />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
-          <source
-            media="(max-width: 600px)"
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
-          />
-          <source
-            media="(max-width: 600px)"
+            type="avif" />
+          <source media="(max-width: 600px)"
             srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
+            type="webp" />
+          <img loading="lazy" decoding="async"
             src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
-          />
+            alt="wooded fields" width="480" height="425" />
         </picture>
       </li>
     </ul>
@@ -375,35 +285,22 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <div class="cs-image-group">
       <picture class="cs-background">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
+        <source media="(max-width: 600px)"
           srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | avif %} 2x"
-          type="image/avif"
-        />
-        <source
-          media="(max-width: 600px)"
+          type="image/avif" />
+        <source media="(max-width: 600px)"
           srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | webp %} 2x"
-          type="image/webp"
-        />
+          type="image/webp" />
         <!--Tablet and above Image-->
-        <source
-          media="(min-width: 601px)"
+        <source media="(min-width: 601px)"
           srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 601px)"
+          type="image/avif" />
+        <source media="(min-width: 601px)"
           srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | webp %}"
-          type="image/webp"
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
-          alt="people"
-          width="586"
-          height="781"
-        />
+          type="image/webp" />
+        <img loading="lazy" decoding="async"
+          src="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}" alt="people"
+          width="586" height="781" />
       </picture>
       <div class="cs-box">
         <span class="cs-name">Tyson Sukeforth</span>
@@ -414,61 +311,41 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <span class="cs-topper">What We Offer</span>
       <h2 class="cs-title">Websites Starting at $0 Down and $150/month</h2>
       <p class="cs-text">
-        Get up and running fast without the sticker shock: no money down for a standard 5 page small business website. Have something larger
-        or complex in mind? Not a problem, we will customize a price package for your needs. 12 month minimum contract, includes design,
+        Get up and running fast without the sticker shock: no money down for a standard 5 page small business website.
+        Have something larger
+        or complex in mind? Not a problem, we will customize a price package for your needs. 12 month minimum contract,
+        includes design,
         development, hosting, unlimited edits, and 24/7 support.
       </p>
       <ul class="cs-card-group">
         <li class="cs-item">
           <h3 class="cs-h3">
-            <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+              src="assets/svgs/icon-checkmark.svg" alt="icon" width="32" height="32" />
             Custom Designs
           </h3>
           <p class="cs-item-text">
-            Every client is different, and we treat them that way. All our designs are custom tailored to your business needs and brand
+            Every client is different, and we treat them that way. All our designs are custom tailored to your business
+            needs and brand
             identity.
           </p>
         </li>
         <li class="cs-item">
           <h3 class="cs-h3">
-            <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+              src="assets/svgs/icon-checkmark.svg" alt="icon" width="32" height="32" />
             Money Back Guarantee
           </h3>
           <p class="cs-item-text">
-            If we can't give you a design you love, we'll return your money and cancel the agreement, no hard feelings. We only sign our
+            If we can't give you a design you love, we'll return your money and cancel the agreement, no hard feelings.
+            We only sign our
             names on work that all parties are proud of.
           </p>
         </li>
         <li class="cs-item">
           <h3 class="cs-h3">
-            <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+              src="assets/svgs/icon-checkmark.svg" alt="icon" width="32" height="32" />
             Top-Notch Support
           </h3>
           <p class="cs-item-text">
@@ -477,20 +354,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </li>
         <li class="cs-item">
           <h3 class="cs-h3">
-            <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+              src="assets/svgs/icon-checkmark.svg" alt="icon" width="32" height="32" />
             Web Expertise
           </h3>
           <p class="cs-item-text">
-            I've been a web professional for over 18 years, for both small business and large enterprises, specializing in user experience.
+            I've been a web professional for over 18 years, for both small business and large enterprises, specializing
+            in user experience.
             Your website is in good hands.
           </p>
         </li>
@@ -510,79 +380,72 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <div class="cs-image-group">
       <picture class="cs-picture">
         <!--Mobile Image-->
-        <source
-          media="(max-width: 600px)"
+        <source media="(max-width: 600px)"
           srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | avif %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | avif %} 2x"
-          type="image/avif"
-        />
-        <source
-          media="(max-width: 600px)"
+          type="image/avif" />
+        <source media="(max-width: 600px)"
           srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | webp %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | webp %} 2x"
-          type="image/webp"
-        />
+          type="image/webp" />
         <!--Tablet and above Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | avif %}" type="image/avif" />
-        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | webp %}" type="image/webp" />
-        <img loading="lazy" decoding="async" src="assets/images/lighthouse.webp" alt="body builder" width="520" height="787" />
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | avif %}"
+          type="image/avif" />
+        <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | webp %}"
+          type="image/webp" />
+        <img loading="lazy" decoding="async" src="assets/images/lighthouse.webp" alt="body builder" width="520"
+          height="787" />
       </picture>
     </div>
     <div class="cs-content">
       <span class="cs-topper">What We Do Better</span>
       <h2 class="cs-title">Our Websites Just Perform Better</h2>
       <p class="cs-text">
-        How fast your website performs is a key factor in user conversion rate and search ranking. Our sites are more than just fast. We
-        push for perfect Google PageSpeed scores for each and every site we hand code. Bulky frameworks and site builders just can't do
+        How fast your website performs is a key factor in user conversion rate and search ranking. Our sites are more
+        than just fast. We
+        push for perfect Google PageSpeed scores for each and every site we hand code. Bulky frameworks and site
+        builders just can't do
         that.
       </p>
     </div>
     <div class="cs-flex">
       <div class="cs-box">
         <div class="cs-box-content" data-box="one">
-          <img class="cs-box-icon" loading="lazy" decoding="async" src="assets/svgs/icon-step.svg" alt="icon" width="62" height="62" />
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="assets/svgs/icon-step.svg" alt="icon" width="62"
+            height="62" />
           <h3 class="cs-h3">A Leg Up</h3>
           <p class="cs-box-text">
-            <strong>Half of all websites get failing grades on PageSpeed tests,</strong> leading to frustrated users and a 31% higher
+            <strong>Half of all websites get failing grades on PageSpeed tests,</strong> leading to frustrated users and
+            a 31% higher
             abandonment rate. <br /><br />
             Our hand-coded websites are optimized to ace PageSpeed scores, giving you a leg up on the competition.
           </p>
         </div>
         <div class="cs-box-content cs-hidden" data-box="two">
-          <img
-            class="cs-box-icon"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-mobile-matters.svg"
-            alt="icon"
-            width="62"
-            height="62"
-          />
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="assets/svgs/icon-mobile-matters.svg" alt="icon"
+            width="62" height="62" />
           <h3 class="cs-h3">Mobile Matters</h3>
           <p class="cs-box-text">
-            Mobile accounts for 2/3 of all web traffic. A user is <strong>6x</strong> as likely to abandon a site that takes 4 seconds to
+            Mobile accounts for 2/3 of all web traffic. A user is <strong>6x</strong> as likely to abandon a site that
+            takes 4 seconds to
             load than for 1 second. <br /><br />
             We optimize all our mobile speeds to be lightning fast with the target of 1 second or less.
           </p>
         </div>
         <div class="cs-box-content cs-hidden" data-box="three">
-          <img
-            class="cs-box-icon"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-form-function.svg"
-            alt="icon"
-            width="62"
-            height="62"
-          />
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="assets/svgs/icon-form-function.svg" alt="icon"
+            width="62" height="62" />
           <h3 class="cs-h3">Form + Function</h3>
           <p class="cs-box-text">
-            Being fast doesn't mean boring. We combine speed with beautiful, custom designs that engage users and drive conversions.
+            Being fast doesn't mean boring. We combine speed with beautiful, custom designs that engage users and drive
+            conversions.
           </p>
         </div>
         <div class="cs-box-content cs-hidden" data-box="four">
-          <img class="cs-box-icon" loading="lazy" decoding="async" src="assets/svgs/icon-handshake.svg" alt="icon" width="62" height="62" />
+          <img class="cs-box-icon" loading="lazy" decoding="async" src="assets/svgs/icon-handshake.svg" alt="icon"
+            width="62" height="62" />
           <h3 class="cs-h3">Here Today, Here Tomorrow</h3>
           <p class="cs-box-text">
-            We don't just build your site and disappear. We handle all your edits and upkeep, and help to grow your audience over time. Our
+            We don't just build your site and disappear. We handle all your edits and upkeep, and help to grow your
+            audience over time. Our
             goal is that after one year you won't know how you lived without us.
           </p>
         </div>
@@ -590,79 +453,39 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <div class="cs-button-group">
         <button class="cs-button cs-active" data-filter="one">
           <picture class="cs-icon-wrapper">
-            <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-step.svg" alt="icon" width="32" height="32" />
+            <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-step.svg" alt="icon" width="32"
+              height="32" />
           </picture>
           <span class="cs-button-text">A Leg Up</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up-red.svg" alt="icon"
+            width="32" height="32" />
         </button>
         <button class="cs-button" data-filter="two">
           <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-mobile-matters.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
+            <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-mobile-matters.svg" alt="icon"
+              width="32" height="32" />
           </picture>
           <span class="cs-button-text">Mobile Matters</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up-red.svg" alt="icon"
+            width="32" height="32" />
         </button>
         <button class="cs-button" data-filter="three">
           <picture class="cs-icon-wrapper">
-            <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-form-function.svg"
-              alt="icon"
-              width="32"
-              height="32"
-            />
+            <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-form-function.svg" alt="icon"
+              width="32" height="32" />
           </picture>
           <span class="cs-button-text">Form + Function</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up-red.svg" alt="icon"
+            width="32" height="32" />
         </button>
         <button class="cs-button" data-filter="four">
           <picture class="cs-icon-wrapper">
-            <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-handshake.svg" alt="icon" width="32" height="32" />
+            <img class="cs-icon" loading="lazy" decoding="async" src="assets/svgs/icon-handshake.svg" alt="icon"
+              width="32" height="32" />
           </picture>
           <span class="cs-button-text">Here Today, <br />Here Tomorrow</span>
-          <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
-          />
+          <img class="cs-arrow" loading="lazy" decoding="async" src="assets/svgs/icon-arrow-right-up-red.svg" alt="icon"
+            width="32" height="32" />
         </button>
       </div>
     </div>
@@ -693,107 +516,43 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
         <ul class="cs-ul">
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Design/<wbr />Development
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             $25/mo Hosting
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             +$100 per Additional Page &gt;5
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             +$250 to add a Blog
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             +$50/mo for Unlimited Edits Addon
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Copywriting Services Available
           </li>
           <li class="cs-li cs-disabled" aria-disabled="true">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             24/7 Support
           </li>
           <li class="cs-li cs-disabled" aria-disabled="true">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Lifetime Updates
           </li>
         </ul>
@@ -808,107 +567,43 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
         <ul class="cs-ul">
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Design/<wbr />Development
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Hosting Included
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             +$100 per Additional Page &gt;5
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             +$250 to add a Blog
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Unlimited Edits
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Copywriting Services Available
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             24/7 Support
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Lifetime Updates
           </li>
         </ul>
@@ -923,68 +618,28 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
         <ul class="cs-ul">
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Design/<wbr />Development of Online Menu
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Integrate with Existing POS (where available)
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Delivery Add-on Available
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             Mobile App Add-on Available
           </li>
           <li class="cs-li">
-            <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
-            />
+            <img class="cs-li-img" aria-hidden="true" loading="lazy" decoding="async"
+              src="/assets/svgs/icon-checkmark-teal.svg" alt="checkmark" width="20" height="20" />
             POS Hardware Extra
           </li>
         </ul>
@@ -1007,19 +662,15 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <ul class="cs-card-group">
       <li class="cs-item">
         <!--Blue Quote-->
-        <img
-          class="cs-quote"
-          aria-hidden="true"
-          src="/assets/svgs/pink-quotes.svg"
-          decoding="async"
-          alt="quote icon"
-          width="120"
-          height="99"
-        />
+        <img class="cs-quote" aria-hidden="true" src="/assets/svgs/pink-quotes.svg" decoding="async" alt="quote icon"
+          width="120" height="99" />
         <p class="cs-item-text">
-          Delivering a website from scratch for an 11-year-old company is a challenging proposition. Tyson rose to the challenge; leveraging
-          a not-quite-established graphical standard and never-been-implemented-in-house requirements, he created a new structure, blueprint
-          and design, and brought the site to fruition as a member of a tiny team of three who bravely assumed the initiative.
+          Delivering a website from scratch for an 11-year-old company is a challenging proposition. Tyson rose to the
+          challenge; leveraging
+          a not-quite-established graphical standard and never-been-implemented-in-house requirements, he created a new
+          structure, blueprint
+          and design, and brought the site to fruition as a member of a tiny team of three who bravely assumed the
+          initiative.
         </p>
         <div class="cs-flex-group">
           <!-- <picture class="cs-picture">
@@ -1033,8 +684,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
               aria-hidden="true"
             />
           </picture> -->
-          <span class="cs-name"
-            >Karen McPhillips
+          <span class="cs-name">Karen McPhillips
             <span class="cs-job"> Vice President, Marketing PlumChoice, Inc.</span>
           </span>
         </div>
@@ -1054,19 +704,23 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <div class="cs-title-group">
         <picture class="cs-background">
           <!--Mobile Image-->
-          <img loading="lazy" decoding="async" src="assets/svgs/cc-ribbon.svg" alt="childhood cancer ribbon" width="203" height="159" />
+          <img loading="lazy" decoding="async" src="assets/svgs/cc-ribbon.svg" alt="childhood cancer ribbon" width="203"
+            height="159" />
         </picture>
         <span class="cs-topper">Giving Back</span>
         <h2 class="cs-title">In The Fight Against Childhood Cancer</h2>
       </div>
       <div class="cs-flex">
         <p class="cs-text">
-          When our family faced crisis, dedicated medical professionals and researchers pulled together to turn it into triumph. To show our
-          eternal gratitude, <strong>a percentage of all net profits go towards fighting childhood cancer</strong> and supporting the
+          When our family faced crisis, dedicated medical professionals and researchers pulled together to turn it into
+          triumph. To show our
+          eternal gratitude, <strong>a percentage of all net profits go towards fighting childhood cancer</strong> and
+          supporting the
           families that face it.
         </p>
         <p class="cs-text">
-          We know first hand how much hope and support the families affected by childhood cancer are in need of. Let’s help give it to them.
+          We know first hand how much hope and support the families affected by childhood cancer are in need of. Let’s
+          help give it to them.
         </p>
       </div>
     </div>

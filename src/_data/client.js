@@ -8,12 +8,10 @@ module.exports = {
     state: "NH",
     zip: "03038",
     country: "US",
-    mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
   },
-  // socials: {
-  //   facebook: "https://www.facebook.com/",
-  //   instagram: "https://www.instagram.com/",
-  // },
+  socials: {
+    linkedin: "https://www.linkedin.com/company/nutfield-digital",
+  },
   //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
   domain: "https://www.nutfielddigital.com",
   // Passing the isProduction variable for use in HTML templates
