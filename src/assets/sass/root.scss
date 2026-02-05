@@ -1334,7 +1334,8 @@
 @media only screen and (min-width: 0rem) {
   #banner-843 {
     /* 175px - 260px top */
-    padding: clamp(10.9375rem, 20vw, 16.25rem) calc(16 / 16 * 1rem) clamp(6.25rem, 14vw, 12vw);
+    padding: clamp(9rem, 20vw, 14.25rem) calc(16 / 16 * 1rem) clamp(6.25rem, 14vw, 12vw);
+    margin-bottom: clamp(-5rem, -4vw, -1rem);
     position: relative;
     z-index: 1;
     /* clips svg wave from causing overflow issues */
