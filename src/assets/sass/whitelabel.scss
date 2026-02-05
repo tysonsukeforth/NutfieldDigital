@@ -14,6 +14,7 @@
   #services-2279 {
     padding: var(--sectionPadding);
     position: relative;
+    background-color: #f7f7f7;
     z-index: 1;
 
     .cs-container {
@@ -49,7 +50,7 @@
     }
 
     .cs-topper {
-      color: var(--primaryLight);
+      color: var(--primary);
     }
 
     .cs-text {
@@ -60,6 +61,7 @@
       margin: 0;
       padding: 0;
       width: 100%;
+      max-width: calc(800 / 16 * 1rem); // to keep at 2 col grid
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: clamp(0.5rem, 2vw, 1.25rem);
@@ -313,12 +315,6 @@
       max-width: calc(1280 / 16 * 1rem);
     }
 
-    .cs-container {
-      .cs-text {
-        text-align: left;
-      }
-    }
-
     .cs-item {
       grid-column: span 6;
       justify-content: flex-start;
@@ -333,9 +329,9 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #services-2279 {
-    .cs-item {
-      grid-column: span 4;
-    }
+    // .cs-item {
+    //   grid-column: span 4;
+    // }
 
     .cs-accent {
       /* 435px - 526px */
@@ -436,7 +432,7 @@
     }
 
     .cs-topper {
-      color: var(--primary);
+      color: var(--primaryLight);
     }
 
     .cs-title,
@@ -593,6 +589,7 @@
 @media only screen and (min-width: 0rem) {
   #why-choose-1824 {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
     transition: background-color 0.3s;
     position: relative;
     overflow: hidden;
@@ -626,7 +623,7 @@
 
     .cs-title {
       margin: 0 0 1rem;
-      max-width: 20ch;
+      max-width: 19ch;
     }
 
     .cs-flex {
@@ -798,7 +795,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border: 1px solid #e7e7e8;
+        object-position: right top;
+        border: 0.5rem solid #d7d7d7;
         border-radius: calc(32 / 16 * 1rem);
         display: block;
         position: absolute;
