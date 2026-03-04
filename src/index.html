@@ -13,13 +13,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
 {% if client.isProduction %}
 <link
-  rel="preload"
-  href="/assets/css/local.css"
-  as="style"
-  onload="
-    this.onload = null;
-    this.rel = 'stylesheet';
-  "
+rel="preload"
+href="/assets/css/local.css"
+as="style"
+onload="
+this.onload = null;
+this.rel = 'stylesheet';
+"
 />
 <noscript>
   <link rel="stylesheet" href="/assets/css/local.css" />
@@ -52,25 +52,25 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     </div>
     <picture class="cs-picture">
       <source
-        media="(max-width: 600px)"
-        srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | avif %}"
-        type="image/avif"
+      media="(max-width: 600px)"
+      srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | avif %}"
+      type="image/avif"
       />
       <source
-        media="(max-width: 600px)"
-        srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | webp %}"
-        type="image/webp"
+      media="(max-width: 600px)"
+      srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | webp %}"
+      type="image/webp"
       />
       <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero-fg.webp' | avif %}" type="image/avif" />
       <source media="(min-width: 601px)" srcset="{% getUrl '/assets/images/hero-fg.webp' | webp %}" type="image/webp" />
       <img
-        aria-hidden="true"
-        decoding="async"
-        fetchpriority="high"
-        src="assets/images/hero-fg.webp"
-        alt="squirrel"
-        width="960"
-        height="694"
+      aria-hidden="true"
+      decoding="async"
+      fetchpriority="high"
+      src="assets/images/hero-fg.webp"
+      alt="squirrel"
+      width="960"
+      height="694"
       />
     </picture>
   </div>
@@ -117,34 +117,34 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <a href="/web-design" class="cs-link" aria-label="Learn More">
           Learn More
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up.svg"
+          alt="icon"
+          width="20"
+          height="20"
           />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          type="avif"
           />
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
+          type="webp"
           />
           <img
-            loading="lazy"
-            decoding="async"
-            src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          alt="wooded fields"
+          width="480"
+          height="425"
           />
         </picture>
       </li>
@@ -160,34 +160,34 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <a href="/web-design" class="cs-link" aria-label="Learn More">
           Learn More
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up.svg"
+          alt="icon"
+          width="20"
+          height="20"
           />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          type="avif"
           />
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
+          type="webp"
           />
           <img
-            loading="lazy"
-            decoding="async"
-            src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          alt="wooded fields"
+          width="480"
+          height="425"
           />
         </picture>
       </li>
@@ -203,34 +203,34 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="/assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/icon-arrow-right-up.svg"
+          alt="icon"
+          width="20"
+          height="20"
           />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          type="avif"
           />
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
+          type="webp"
           />
           <img
-            loading="lazy"
-            decoding="async"
-            src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          alt="wooded fields"
+          width="480"
+          height="425"
           />
         </picture>
       </li>
@@ -246,34 +246,34 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up.svg"
+          alt="icon"
+          width="20"
+          height="20"
           />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          type="avif"
           />
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
+          type="webp"
           />
           <img
-            loading="lazy"
-            decoding="async"
-            src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          alt="wooded fields"
+          width="480"
+          height="425"
           />
         </picture>
       </li>
@@ -289,34 +289,34 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up.svg"
+          alt="icon"
+          width="20"
+          height="20"
           />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          type="avif"
           />
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
+          type="webp"
           />
           <img
-            loading="lazy"
-            decoding="async"
-            src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          alt="wooded fields"
+          width="480"
+          height="425"
           />
         </picture>
       </li>
@@ -333,34 +333,34 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <a href="/contact" class="cs-link" aria-label="Get Started">
           Get Started
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up.svg"
-            alt="icon"
-            width="20"
-            height="20"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up.svg"
+          alt="icon"
+          width="20"
+          height="20"
           />
         </a>
         <!--Background Image-->
         <picture class="cs-background">
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            type="avif"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          type="avif"
           />
           <source
-            media="(max-width: 600px)"
-            srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
-            type="webp"
+          media="(max-width: 600px)"
+          srcset="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | webp %}"
+          type="webp"
           />
           <img
-            loading="lazy"
-            decoding="async"
-            src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
-            alt="wooded fields"
-            width="480"
-            height="425"
+          loading="lazy"
+          decoding="async"
+          src="{% getUrl '/assets/images/hero-bg-m.webp' | resize({width: 480, height: 425}) | avif %}"
+          alt="wooded fields"
+          width="480"
+          height="425"
           />
         </picture>
       </li>
@@ -378,33 +378,33 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <picture class="cs-background">
         <!--Mobile Image-->
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | avif %} 2x"
-          type="image/avif"
+        media="(max-width: 600px)"
+        srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | avif %} 2x"
+        type="image/avif"
         />
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | webp %} 2x"
-          type="image/webp"
+        media="(max-width: 600px)"
+        srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/headshot-temp.webp' | resize({width: 446, height: 594}) | webp %} 2x"
+        type="image/webp"
         />
         <!--Tablet and above Image-->
         <source
-          media="(min-width: 601px)"
-          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
-          type="image/avif"
+        media="(min-width: 601px)"
+        srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
+        type="image/avif"
         />
         <source
-          media="(min-width: 601px)"
-          srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | webp %}"
-          type="image/webp"
+        media="(min-width: 601px)"
+        srcset="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | webp %}"
+        type="image/webp"
         />
         <img
-          loading="lazy"
-          decoding="async"
-          src="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
-          alt="people"
-          width="586"
-          height="781"
+        loading="lazy"
+        decoding="async"
+        src="{% getUrl '/assets/images/headshot-temp.webp' | resize({width: 586, height: 781}) | avif %}"
+        alt="people"
+        width="586"
+        height="781"
         />
       </picture>
       <div class="cs-box">
@@ -424,14 +424,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <li class="cs-item">
           <h3 class="cs-h3">
             <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
+            class="cs-h3-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/icon-checkmark.svg"
+            alt="icon"
+            width="32"
+            height="32"
             />
             Custom Designs
           </h3>
@@ -443,14 +443,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <li class="cs-item">
           <h3 class="cs-h3">
             <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
+            class="cs-h3-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/icon-checkmark.svg"
+            alt="icon"
+            width="32"
+            height="32"
             />
             Money Back Guarantee
           </h3>
@@ -462,14 +462,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <li class="cs-item">
           <h3 class="cs-h3">
             <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
+            class="cs-h3-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/icon-checkmark.svg"
+            alt="icon"
+            width="32"
+            height="32"
             />
             Top-Notch Support
           </h3>
@@ -480,14 +480,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <li class="cs-item">
           <h3 class="cs-h3">
             <img
-              class="cs-h3-icon"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-checkmark.svg"
-              alt="icon"
-              width="32"
-              height="32"
+            class="cs-h3-icon"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/icon-checkmark.svg"
+            alt="icon"
+            width="32"
+            height="32"
             />
             Web Expertise
           </h3>
@@ -513,14 +513,14 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <picture class="cs-picture">
         <!--Mobile Image-->
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | avif %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | avif %} 2x"
-          type="image/avif"
+        media="(max-width: 600px)"
+        srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | avif %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | avif %} 2x"
+        type="image/avif"
         />
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | webp %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | webp %} 2x"
-          type="image/webp"
+        media="(max-width: 600px)"
+        srcset="{% getUrl '/assets/images/lighthouse.webp' | resize({ width: 216, height: 287 }) | webp %} 1x, {% getUrl '/assets/images/lighthouse.webp' | resize({ width: 432, height: 574 }) | webp %} 2x"
+        type="image/webp"
         />
         <!--Tablet and above Image-->
         <source media="(max-width: 600px)" srcset="{% getUrl '/assets/images/lighthouse.webp' | avif %}" type="image/avif" />
@@ -550,13 +550,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
         <div class="cs-box-content cs-hidden" data-box="two">
           <img
-            class="cs-box-icon"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-mobile-matters.svg"
-            alt="icon"
-            width="62"
-            height="62"
+          class="cs-box-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-mobile-matters.svg"
+          alt="icon"
+          width="62"
+          height="62"
           />
           <h3 class="cs-h3">Mobile Matters</h3>
           <p class="cs-box-text">
@@ -567,13 +567,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
         <div class="cs-box-content cs-hidden" data-box="three">
           <img
-            class="cs-box-icon"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-form-function.svg"
-            alt="icon"
-            width="62"
-            height="62"
+          class="cs-box-icon"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-form-function.svg"
+          alt="icon"
+          width="62"
+          height="62"
           />
           <h3 class="cs-h3">Form + Function</h3>
           <p class="cs-box-text">
@@ -596,59 +596,59 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
           </picture>
           <span class="cs-button-text">A Leg Up</span>
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up-red.svg"
+          alt="icon"
+          width="32"
+          height="32"
           />
         </button>
         <button class="cs-button" data-filter="two">
           <picture class="cs-icon-wrapper">
             <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-mobile-matters.svg"
-              alt="icon"
-              width="32"
-              height="32"
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/icon-mobile-matters.svg"
+            alt="icon"
+            width="32"
+            height="32"
             />
           </picture>
           <span class="cs-button-text">Mobile Matters</span>
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up-red.svg"
+          alt="icon"
+          width="32"
+          height="32"
           />
         </button>
         <button class="cs-button" data-filter="three">
           <picture class="cs-icon-wrapper">
             <img
-              class="cs-icon"
-              loading="lazy"
-              decoding="async"
-              src="assets/svgs/icon-form-function.svg"
-              alt="icon"
-              width="32"
-              height="32"
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="assets/svgs/icon-form-function.svg"
+            alt="icon"
+            width="32"
+            height="32"
             />
           </picture>
           <span class="cs-button-text">Form + Function</span>
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up-red.svg"
+          alt="icon"
+          width="32"
+          height="32"
           />
         </button>
         <button class="cs-button" data-filter="four">
@@ -657,16 +657,65 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
           </picture>
           <span class="cs-button-text">Here Today, <br />Here Tomorrow</span>
           <img
-            class="cs-arrow"
-            loading="lazy"
-            decoding="async"
-            src="assets/svgs/icon-arrow-right-up-red.svg"
-            alt="icon"
-            width="32"
-            height="32"
+          class="cs-arrow"
+          loading="lazy"
+          decoding="async"
+          src="assets/svgs/icon-arrow-right-up-red.svg"
+          alt="icon"
+          width="32"
+          height="32"
           />
         </button>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Example                    -->
+<!-- ============================================ -->
+
+<section id="sbs-1010">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <a href="https://redlinedemo.nutfielddigital.com" target="_blank"  class="cs-picture" aria-label="See a Demo Website">
+        <picture>
+          <!--Desktop-->
+          <source media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 518, height: 436, position: 'left' }) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1036, height: 872, position: 'left' }) | avif %} 2x"
+            type="image/avif">
+          <source media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 518, height: 436, position: 'left' }) | webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1036, height: 872, position: 'left' }) | webp %} 2x"
+            type="image/webp">
+          <!--Tablet-->
+          <source media="(min-width: 601px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 776, height: 237}) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1552, height: 474}) | avif %} 2x"
+            type="image/avif">
+          <source media="(min-width: 601px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 776, height: 237})| webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1552, height: 474}) | webp %} 2x"
+            type="image/webp">
+          <!--Mobile-->
+          <source media="(min-width: 600px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 544, height: 237, position: 'left' }) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1088, height: 474, position: 'left' }) | avif %} 2x"
+            type="image/avif">
+          <source media="(min-width: 600px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 544, height: 237, position: 'left' }) | webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1088, height: 474, position: 'left' }) | webp %} 2x"
+            type="image/webp">
+          <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/redline.jpg' | webp %}" alt="demo website"
+            width="1552" height="1082" aria-hidden="true">
+        </picture>
+      </a>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Examples</span>
+      <h2 class="cs-title">See a Demo</h2>
+      <p class="cs-text">
+        If you're looking for more variety, check out this demo website we built for a fictional sandwich shop. (It's a shame it's not real, we'd love their steak and cheese right now.) This just scratches the surface of what we can do!<br /><br />
+        <!--Creates the space between p tags on mobile-->
+        <span class="cs-spacer"></span>
+        And yes, it's fully optimized. Even with the multitude of images and assets, it still scores a perfect 100 performance score on Google PageSpeed Insights for both mobile and desktop. Try it out yourself and see how fast it loads!
+      </p>
+      <a href="https://redlinedemo.nutfielddigital.com" target="_blank" class="cs-button-solid">See a Demo Website</a>
     </div>
   </div>
 </section>
@@ -696,105 +745,105 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <ul class="cs-ul">
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Design/<wbr />Development
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             $25/mo Hosting
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             +$100 per Additional Page &gt;5
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             +$250 to add a Blog
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             +$50/mo for Unlimited Edits Addon
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Copywriting Services Available
           </li>
           <li class="cs-li cs-disabled" aria-disabled="true">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             24/7 Support
           </li>
           <li class="cs-li cs-disabled" aria-disabled="true">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Lifetime Updates
           </li>
@@ -811,105 +860,105 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <ul class="cs-ul">
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Design/<wbr />Development
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Hosting Included
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             +$100 per Additional Page &gt;5
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             +$250 to add a Blog
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Unlimited Edits
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Copywriting Services Available
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             24/7 Support
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Lifetime Updates
           </li>
@@ -926,66 +975,66 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <ul class="cs-ul">
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Design/<wbr />Development of Online Menu
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Integrate with Existing POS (where available)
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Delivery Add-on Available
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             Mobile App Add-on Available
           </li>
           <li class="cs-li">
             <img
-              class="cs-li-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="/assets/svgs/icon-checkmark-teal.svg"
-              alt="checkmark"
-              width="20"
-              height="20"
+            class="cs-li-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/icon-checkmark-teal.svg"
+            alt="checkmark"
+            width="20"
+            height="20"
             />
             POS Hardware Extra
           </li>
@@ -1010,13 +1059,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <li class="cs-item">
         <!--Blue Quote-->
         <img
-          class="cs-quote"
-          aria-hidden="true"
-          src="/assets/svgs/pink-quotes.svg"
-          decoding="async"
-          alt="quote icon"
-          width="120"
-          height="99"
+        class="cs-quote"
+        aria-hidden="true"
+        src="/assets/svgs/pink-quotes.svg"
+        decoding="async"
+        alt="quote icon"
+        width="120"
+        height="99"
         />
         <p class="cs-item-text">
           Delivering a website from scratch for an 11-year-old company is a challenging proposition. Tyson rose to the challenge; leveraging
@@ -1026,24 +1075,24 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <div class="cs-flex-group">
           <!-- <picture class="cs-picture">
             <img
-              class="cs-profile"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg"
-              decoding="async"
-              alt="profile"
-              width="50"
-              height="50"
-              aria-hidden="true"
+            class="cs-profile"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg"
+            decoding="async"
+            alt="profile"
+            width="50"
+            height="50"
+            aria-hidden="true"
             />
           </picture> -->
           <span class="cs-name"
-            >Karen McPhillips
-            <span class="cs-job"> Vice President, Marketing PlumChoice, Inc.</span>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="cs-bubbles" aria-hidden="true"></div>
+          >Karen McPhillips
+          <span class="cs-job"> Vice President, Marketing PlumChoice, Inc.</span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="cs-bubbles" aria-hidden="true"></div>
 </section>
 
 <!-- ============================================ -->
