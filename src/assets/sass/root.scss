@@ -965,7 +965,8 @@
       /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
       // columns: 2;
       position: absolute;
-      top: 250%;
+      top: 100%;
+      left: -0.75rem;
       z-index: -100;
       overflow: hidden;
       transform: scaleY(0);
@@ -1087,7 +1088,7 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 12px - 24px */
-    padding: clamp(0.75rem, 2vw, 1rem) 0;
+    padding: 0;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* 12px - 24px */
@@ -1239,7 +1240,7 @@
 
     .cs-li {
       list-style: none;
-      height: 100%;
+      height: calc(96 / 16 * 1rem);
       padding: 0;
       display: flex;
       align-items: center;
@@ -1278,10 +1279,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-    }
-
-    .cs-drop-ul {
-      top: 100%;
     }
 
     .cs-social {
