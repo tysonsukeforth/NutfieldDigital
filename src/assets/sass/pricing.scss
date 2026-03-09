@@ -13,6 +13,8 @@
 @media only screen and (min-width: 0rem) {
   #pricing-357 {
     padding: var(--sectionPadding);
+    background-color: #fff;
+    transition: background-color 0.3s;
 
     .cs-container {
       width: 100%;

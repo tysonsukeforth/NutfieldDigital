@@ -15,6 +15,8 @@
     padding: var(--sectionPadding);
     overflow: hidden;
     position: relative;
+    background: #fff;
+    transition: background-color 0.3s;
 
     .cs-container {
       width: 100%;

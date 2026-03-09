@@ -1407,6 +1407,11 @@
       left: 50%;
       z-index: -1;
       transform: translateX(-50%);
+
+      path {
+        fill: #fff;
+        transition: fill 0.3s;
+      }
     }
   }
 }

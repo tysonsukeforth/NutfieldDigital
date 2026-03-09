@@ -6,6 +6,21 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 /*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-843 {
+    .cs-wave {
+      path {
+        fill: #f7f7f7;
+      }
+    }
+  }
+}
+
+/*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
 
@@ -16,6 +31,7 @@
     position: relative;
     background-color: #f7f7f7;
     z-index: 1;
+    transition: background-color 0.3s;
 
     .cs-container {
       width: 100%;
@@ -589,7 +605,6 @@
 @media only screen and (min-width: 0rem) {
   #why-choose-1824 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
     transition: background-color 0.3s;
     position: relative;
     overflow: hidden;
@@ -772,9 +787,8 @@
     }
 
     .cs-image-group {
-      width: 100%;
-      height: 100vw;
-      min-height: calc(400 / 16 * 1rem);
+      width: clamp(20rem, 50vw, 60rem);
+      height: clamp(20rem, 35vw, 45rem);
       /* chnages to 100% on desktop */
       max-height: calc(680 / 16 * 1rem);
       position: relative;
@@ -784,7 +798,6 @@
     .cs-picture {
       width: 100%;
       height: 100%;
-      object-fit: cover;
       display: block;
       position: absolute;
       top: 0;
@@ -795,8 +808,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: right top;
-        border: 0.5rem solid #d7d7d7;
+        object-position: left 20%;
+        border: 8px solid #d4d4d4;
         border-radius: calc(32 / 16 * 1rem);
         display: block;
         position: absolute;
@@ -896,6 +909,9 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
+    #services-2279 {
+      background-color: var(--dark);
+    }
     #why-choose-1824 {
       background-color: var(--dark);
       .cs-title,
