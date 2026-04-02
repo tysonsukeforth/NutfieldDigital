@@ -1,77 +1,89 @@
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="/assets/css/blog.css">
 
-    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
-    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
-    <!-- {% include "components/post-schema.html" %} -->
+<!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+<!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+<!-- {% include "components/post-schema.html" %} -->
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner-310">
-        <div class="cs-container"></div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" decoding="async">
-        </picture>
-    </div>
+<div id="banner-843">
+  <div class="cs-container">
+    <h1 class="cs-int-title">Blog</h1>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background" aria-hidden="true">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="/assets/images/hero-bg-m.webp" />
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="/assets/images/hero-bg.webp" />
+    <img loading="lazy" decoding="async" src="/assets/images/hero-bg.webp" alt="yoga" width="1920" height="1280" />
+  </picture>
+  <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+  <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z"
+      fill="#ffffff" />
+  </svg>
+</div>
 
-    <!-- ============================================ -->
-    <!--                Post Content                  -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Post Content                  -->
+<!-- ============================================ -->
 
-    <div id="single-article">
-        <div class="cs-container">
-            <article class="cs-article-post">
-                <picture class="cs-article-image">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" alt="{{ alt }}" width="800" height="400" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-                <div class="cs-article-group">
-                    <h1 class="cs-article-title">{{ title }}</h1>
-                    <div class="cs-author-group">
-                        <picture class="cs-author-img">
-                            <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true"/>
-                        </picture>
-                        <span class="cs-author-name">{{ author }}</span>
-                        <span aria-hidden="true" class="cs-dot"></span>
-                        <span class="cs-date">{{ date | postDate }}</span>
-                    </div>
-                </div>
-                <section class="cs-article-content">
-                    {{ content | safe }}
-                </section>
-            </article>
+<div id="single-article">
+  <div class="cs-container">
+    <article class="cs-article-post">
+      <picture class="cs-article-image">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | avif %}"
+          type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | webp %}"
+          type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | jpeg %}"
+          type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | avif %}"
+          type="image/avif">
+        <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | webp %}"
+          type="image/webp">
+        <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | jpeg %}"
+          type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | avif %}"
+          type="image/avif">
+        <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | webp %}"
+          type="image/webp">
+        <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}"
+          type="image/jpeg">
+        <img src="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" alt="{{ alt }}" width="800"
+          height="400" loading="lazy" decoding="async" aria-hidden="true">
+      </picture>
+      <div class="cs-article-group">
+        <h1 class="cs-article-title">{{ title }}</h1>
+        <div class="cs-author-group">
+          <picture class="cs-author-img">
+            <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async"
+              loading="lazy" aria-hidden="true" />
+          </picture>
+          <span class="cs-author-name">{{ author }}</span>
+          <span aria-hidden="true" class="cs-dot"></span>
+          <span class="cs-date">{{ date | postDate }}</span>
         </div>
+      </div>
+      <section class="cs-article-content">
+        {{ content | safe }}
+      </section>
+    </article>
+  </div>
 
-        {% include 'components/featured-posts.html' %}
-    </div>
+  {% include 'components/featured-posts.html' %}
+</div>
+{% include 'sections/cta.html' %}
 {% endblock %}
