@@ -73,6 +73,12 @@
       }
     }
 
+    .all-posts {
+      justify-content: center;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
     .cs-sidebar-img {
       position: relative;
       display: block;
@@ -496,7 +502,6 @@
       a:not(.cs-button-solid) {
         text-decoration: underline;
         font-size: inherit;
-        color: var(--secondary);
       }
 
       .cs-button-solid {
@@ -525,6 +530,10 @@
   #single-article {
     flex-direction: row;
     align-items: flex-start;
+
+    .cs-article-title {
+      max-width: none;
+    }
   }
 }
 
