@@ -55,7 +55,7 @@ this.rel = 'stylesheet';
     <picture class="cs-picture">
       <source
       media="(max-width: 600px)"
-      srcset="/assets/images/hero-fg.avif"
+      srcset="{% getUrl '/assets/images/hero-fg.webp' | resize({ width: 570, height: 413 }) | avif %}"
       type="image/avif"
       />
       <source
