@@ -1218,6 +1218,10 @@
 
       &:hover {
 
+        .cs-picture {
+          box-shadow: 0 0 2px 2px var(--primary);
+        }
+
         .cs-h3,
         .cs-desc {
           color: #fff;
@@ -1243,9 +1247,11 @@
       height: clamp(21.5rem, 30vw, 26.25rem);
       margin: auto;
       border-radius: 0 calc(24 / 16 * 1rem) 0 calc(24 / 16 * 1rem);
+      box-shadow: 0 0 0 1px #bababa;
       display: block;
       position: relative;
       overflow: hidden;
+      transition: box-shadow 0.3s;
 
       img {
         width: 100%;
