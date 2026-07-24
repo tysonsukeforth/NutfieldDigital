@@ -674,6 +674,78 @@ this.rel = 'stylesheet';
 </section>
 
 <!-- ============================================ -->
+<!--                  Portfolio                   -->
+<!-- ============================================ -->
+
+<section id="gallery-1374">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Portfolio</span>
+      <h2 class="cs-title">Explore Our Recently Completed Work</h2>
+      <p class="cs-text">
+        We specialize in small business web design and development for clients anywhere in the US. Every line of code is
+        written by hand to ensure the best performance, which helps bring in more customers to your site and bring more
+        revenue to your business.
+      </p>
+    </div>
+    <ul class="cs-image-group">
+      <!-- Card 1 -->
+      <li class="cs-item">
+        <a href="/kilt-and-clover" class="cs-link">
+          <picture class="cs-picture">
+            <source media="(max-width: 767px)" sizes="calc(100vw - 3rem)"
+              srcset="/assets/images/portfolio/thumb-KC-sm353w.webp 353w, /assets/images/portfolio/thumb-KC-sm706w.webp 706w">
+            <source media="(min-width: 768px)" sizes="(max-width: 90rem) calc(45.7vw - 1rem), 610px"
+              srcset="/assets/images/portfolio/thumb-KC-lg610w.webp 610w, /assets/images/portfolio/thumb-KC-lg1220w.webp 1220w">
+            <img loading="lazy" decoding="async" src="/assets/images/portfolio/thumb-KC-lg610w.webp" alt="celtic gift website"
+              width="353" height="344">
+          </picture>
+          <div class="cs-item-text">
+            <div class="cs-flex">
+              <h3 class="cs-h3">Kilt &amp; Clover</h3>
+              <span class="cs-desc">A complete Travel Agency App UI</span>
+            </div>
+            <picture class="cs-icon-wrapper">
+              <img class="cs-icon" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                alt="arrow" width="413" height="374" aria-hidden="true">
+            </picture>
+          </div>
+        </a>
+      </li>
+      <!-- Card 2 -->
+      <li class="cs-item">
+        <a href="https://redlinedemo.nutfielddigital.com/" class="cs-link">
+          <picture class="cs-picture">
+            <source media="(max-width: 767px)" sizes="calc(100vw - 3rem)"
+              srcset="{% getUrl '/assets/images/portfolio/thumb-redline-sm706w.webp' | resize({ width: 383, height: 344 }) %} 353w, /assets/images/portfolio/thumb-redline-sm706w.webp 706w">
+            <source media="(min-width: 768px)" sizes="(max-width: 90rem) calc(45.7vw - 1rem), 610px"
+              srcset="{% getUrl '/assets/images/portfolio/thumb-redline-lg1220w.webp' | resize({ width: 610, height: 420 }) %} 610w, /assets/images/portfolio/thumb-redline-lg1220w.webp 1220w">
+            <img loading="lazy" decoding="async"
+              src="/assets/images/portfolio/thumb-redline-lg1220w.webp" alt="sub shop website"
+              width="353" height="344">
+          </picture>
+          <div class="cs-item-text">
+            <div class="cs-flex">
+              <h3 class="cs-h3">Demo Take Out Restaurant</h3>
+              <span class="cs-desc">Demo website we built for a fictional sandwich shop. (It's a shame it's not real, we'd love their steak and cheese right now.) Fully optimized, even with a multitude of images and assets it still scores a perfect 100 performance score on Google PageSpeed.</span>
+            </div>
+            <picture class="cs-icon-wrapper">
+              <img class="cs-icon" decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                alt="arrow" width="413" height="374" aria-hidden="true">
+            </picture>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <a href="/" class="cs-button-solid">View All Works</a>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+<!-- ============================================ -->
 <!--                   Example                    -->
 <!-- ============================================ -->
 
