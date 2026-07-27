@@ -1349,7 +1349,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      gap: calc(16 / 16 * 1rem);
+    }
+
+    .cs-topper {
+      color: var(--secondary);
     }
 
     .cs-int-title {
