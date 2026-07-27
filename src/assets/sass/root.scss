@@ -156,20 +156,25 @@
   }
 
   .cs-button-outline {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    width: auto;
-    padding: calc(16 / 16 * 1rem) calc(32 / 16 * 1rem);
+    font-size: calc(16 / 16 * 1rem);
+    line-height: calc(56 / 16 * 1rem);
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: calc(16 / 16 * 1rem);
-    line-height: calc(16 / 16 * 1em);
-    font-weight: bold;
-    border: 2px solid #000;
+    font-family: var(--headerFont);
+    overflow: hidden;
+    margin: 0;
+    color: #fff;
+    padding: 0 calc(42 / 16 * 1rem);
+    border-radius: calc(4 / 16 * 1rem) calc(30 / 16 * 1rem) calc(4 / 16 * 1rem);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    border: 2px solid var(--bodyTextColor);
 
     // Transition Properties
-    color: #000;
+    color: var(--bodyTextColor);
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;

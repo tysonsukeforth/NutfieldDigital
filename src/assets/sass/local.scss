@@ -1156,7 +1156,7 @@
     }
   }
 
-  #gallery-1374 {
+  #portfolio {
     padding: var(--sectionPadding);
     background-color: #1a1a1a;
     position: relative;
@@ -1373,7 +1373,7 @@
 
 /* In Between - 600px */
 @media only screen and (min-width: 48rem) {
-  #gallery-1374 {
+  #portfolio {
     .cs-item {
       grid-column: span 6;
     }
@@ -1383,7 +1383,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
-    #gallery-1374 {
+    #portfolio {
       background-color: rgba(0, 0, 0, 0.6);
 
       .cs-title,

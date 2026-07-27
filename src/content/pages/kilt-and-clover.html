@@ -8,7 +8,7 @@ permalink: "/kilt-and-clover/"
 
 {% block head %}
 <link rel="preload" as="image" href="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 640, height: 600 }) | avif %}" />
-<link rel="preload" as="image" href="{% getUrl '/assets/images/headshot-temp.webp' | resize({ width: 482, height: 536 }) | avif %}" />
+<link rel="preload" as="image" href="{% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({ width: 482, height: 536 }) | avif %}" />
     <link rel="stylesheet" href="/assets/css/projects.css">
 {% endblock %}
 
@@ -46,101 +46,54 @@ permalink: "/kilt-and-clover/"
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="RPsbs-313">
+<section id="sbs-1362">
   <div class="cs-container">
-    <!-- Left Image Section -->
     <div class="cs-image-group">
-      <picture class="cs-picture cs-picture1">
+      <picture class="cs-background">
         <!--Mobile Image-->
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 482, height: 536 }) | avif %}"
-          type="image/avif"
+        media="(max-width: 600px)"
+        srcset="{% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 223, height: 297}) | avif %} 1x, {% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 446, height: 594}) | avif %} 2x"
+        type="image/avif"
         />
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 482, height: 536 }) | webp %}"
-          type="image/webp"
+        media="(max-width: 600px)"
+        srcset="{% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 223, height: 297}) | webp %} 1x, {% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 446, height: 594}) | webp %} 2x"
+        type="image/webp"
+        />
+        <!--Tablet and above Image-->
+        <source
+        media="(min-width: 601px)"
+        srcset="{% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 586, height: 781}) | avif %}"
+        type="image/avif"
         />
         <source
-          media="(max-width: 600px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 482, height: 536 }) | jpeg %}"
-          type="image/jpeg"
-        />
-        <!--Tablet Image-->
-        <source
-          media="(max-width: 1024px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 802, height: 892 }) | avif %}"
-          type="image/avif"
-        />
-        <source
-          media="(max-width: 1024px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 802, height: 892 }) | webp %}"
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 1024px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 802, height: 892 }) | jpeg %}"
-          type="image/jpeg"
-        />
-        <!--Desktop Image-->
-        <source
-          media="(min-width: 1024px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 1044, height: 1162 }) | avif %}"
-          type="image/avif"
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 1044, height: 1162 }) | webp %}"
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 1024px)"
-          srcset="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 1044, height: 1162 }) | jpeg %}"
-          type="image/jpeg"
+        media="(min-width: 601px)"
+        srcset="{% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 586, height: 781}) | webp %}"
+        type="image/webp"
         />
         <img
-          src="{% getUrl '/assets/images/white-mountains.jpg' | resize({ width: 1044, height: 1162 }) | jpeg %}"
-          alt="white mountains"
-          width="522"
-          height="581"
-          decoding="async"
+        loading="lazy"
+        decoding="async"
+        src="{% getUrl '/assets/images/portfolio/feature-KC-lg1262.webp' | resize({width: 586, height: 781}) | avif %}"
+        alt="people"
+        width="586"
+        height="781"
         />
       </picture>
     </div>
-    <!-- Right Content Section -->
     <div class="cs-content">
-      <span class="cs-topper">Nutfield Digital</span>
-      <h2 class="cs-title">A Very Human Approach to Digital Marketing</h2>
+      <h2 class="cs-title">An Ecommerce Startup With with a Celtic Heart</h2>
       <p class="cs-text">
-        Hi, I'm Tyson, Owner and Lead Developer of Nutfield Digital. I've been a professional web developer and digital marketer for over 18 years. I've worked in both small business agencies on brands such as <strong>Baileys Coffee Creamers</strong>, <strong>Shields MRI</strong>, and <a href="https://to-jo.com/" target="_blank"><strong>To-Jo Mushrooms</strong></a>, and have also led dedicated development teams for large enterprise websites like <a href="https://www.hostgator.com/" target="_blank"><strong>HostGator</strong></a> and <strong>Domain.com</strong>. I'm also a dad to two amazing
-        young twins, one of which is already a cancer survivor.
+        <a href="https://kiltandclover.com">Kilt &amp; Clover</a> is a new online storefront for Celtic themed gifts, inspired by the owner's love and exploration of their family's Irish background. Their selection includes everything from official Guinness merchandise to Highland themed children's books, with their specialty being hand curated and themed gift boxes for every occasion.
       </p>
-      <p class="cs-text">
-        After taking some months off to be a stay-at-home dad and help the family recover post-treatment, I wanted to return to my creative
-        agency roots while still being able to stay close to home. But I wasn't happy with how impersonal and disconnected the industry had
-        become. Modern business has increasingly become all about chasing big clients, while small business were being left out in the cold.
-      </p>
-      <p class="cs-text">
-        Deciding to be the change I wanted to see, I started <strong>Nutfield Digital</strong>, a web development agency focused on small
-        business needs that treated clients like people, not just another project number. An agency that provides high-quality, tailored web
-        solutions without the high costs and impersonal service of larger agencies.
-      </p>
-      <p class="cs-text">
-        That's why I love offering a package that's <strong>$0 money down, $150/mo</strong> that eliminates the barrier of entry for small
-        businesses. Now anyone can have a great professional website, and the continued support to keep growing.
-      </p>
-      <!-- <div class="cs-quote">
-        <span class="cs-quote-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-        </span>
-        <span class="cs-name">Tyson Sukeforth</span>
-        <span class="cs-job">Owner, Lead Developer</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77" />
-      </div> -->
-      <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+      <p class="cs-text">They needed an ecommerce website could do more than showcase their products, it needed to tell their story. We also wanted to get it off and running quickly, affordibly, and be ready to grow as the business does. And they wanted an ecommerce solution that could be used to sell in-person at local events as well as online. To best serve all these, we coupled a content rich homepage with a Square storefront.</p>
+      <p class="cs-text">We helped get their brand identity off the ground with a new logo that can be adapted for a variety of sizes and uses. From there the rest of the homepage design came together, striking a balance between oromotion and visual storytelling.</p>
+      <a href="https://kiltandclover.com" class="cs-button-solid" aria-label="Visit Kilt & Clover">Visit Kilt &amp; Clover</a>
+      <a href="/contact" class="cs-button-outline" aria-label="Contact Us">Contact Us</a>
     </div>
   </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
 
 
