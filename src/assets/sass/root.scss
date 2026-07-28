@@ -126,6 +126,9 @@
     z-index: 1;
     transition: color 0.3s;
 
+    // Fix ghost lines by forcing GPU rendering
+    transform: translateZ(0);
+
     &:before {
       content: "";
       position: absolute;
@@ -157,27 +160,27 @@
 
   .cs-button-outline {
     font-size: calc(16 / 16 * 1rem);
-    line-height: calc(56 / 16 * 1rem);
+    line-height: calc(52 / 16 * 1rem);
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--headerFont);
     overflow: hidden;
     margin: 0;
-    color: #fff;
     padding: 0 calc(42 / 16 * 1rem);
     border-radius: calc(4 / 16 * 1rem) calc(30 / 16 * 1rem) calc(4 / 16 * 1rem);
     display: inline-block;
     position: relative;
     z-index: 1;
-    transition: color 0.3s;
     border: 2px solid var(--bodyTextColor);
+
+    // Fix ghost lines by forcing GPU rendering
+    transform: translateZ(0);
 
     // Transition Properties
     color: var(--bodyTextColor);
     transition: color 0.3s;
     transition-delay: 0.1s;
-    text-align: center;
 
     &:hover {
       color: #fff;
@@ -195,7 +198,7 @@
       content: "";
       opacity: 1;
       display: block;
-      background-color: #000;
+      background-color: var(--bodyTextColor);
       height: 100%;
 
       //Transition properties

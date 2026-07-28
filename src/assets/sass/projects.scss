@@ -43,7 +43,7 @@
     padding: var(--sectionPadding);
     transition: background-color 0.3s;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     z-index: 1;
 
     .cs-container {
@@ -86,14 +86,22 @@
       }
     }
 
+    .cs-button-group {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      gap: calc(24 / 16 * 1rem);
+    }
+
     .cs-image-group {
       width: 100%;
       max-width: calc(586 / 16 * 1rem);
       /* Changes to auto at desktop */
       height: calc(520 / 16 * 1rem);
       /* 32px - 48px */
-      border: 1px solid var(--bodyTextColor);
+      border: 2px solid #ffffff;
       border-radius: clamp(2rem, 4vw, 3rem);
+      box-shadow: rgba(149, 157, 165, 0.5) 0px 2px 12px;
       /* clips the corners of the children around the border radius */
       overflow: hidden;
       position: relative;
@@ -219,7 +227,7 @@
   #sbs-1362 {
     .cs-container {
       max-width: calc(1280 / 16 * 1rem);
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
       align-items: stretch;
     }
@@ -380,46 +388,6 @@
 
       .cs-picture-3 {
         height: calc(629 / 16 * 1em);
-      }
-    }
-
-    .cs-button-solid {
-      font-size: calc(16 / 16 * 1rem);
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      text-decoration: none;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      color: #fff;
-      min-width: calc(150 / 16 * 1rem);
-      padding: 0 calc(24 / 16 * 1rem);
-      background-color: var(--primary);
-      border-radius: calc(4 / 16 * 1rem);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-
-      &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: calc(4 / 16 * 1rem);
-        transition: width 0.3s;
-      }
-
-      &:hover {
-        &:before {
-          width: 100%;
-        }
       }
     }
   }
