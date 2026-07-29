@@ -677,15 +677,14 @@ this.rel = 'stylesheet';
 <!--                  Portfolio                   -->
 <!-- ============================================ -->
 
-<section id="portfolio">
+<section id="port-gal">
+  <span id="portfolio"></span>
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Our Portfolio</span>
-      <h2 class="cs-title">Explore Our Recently Completed Work</h2>
+      <h2 class="cs-title">Explore Some Of Our Recent Work</h2>
       <p class="cs-text">
-        We specialize in small business web design and development for clients anywhere in the US. Every line of code is
-        written by hand to ensure the best performance, which helps bring in more customers to your site and bring more
-        revenue to your business.
+        All of our work is hand coded, mobile optimized, and tailored for your unique needs. No matter what kind of business you're in, we can build you a professional website that is engaging, performant, and makes both your customers and Google happy.
       </p>
     </div>
     <ul class="cs-image-group">
@@ -703,7 +702,7 @@ this.rel = 'stylesheet';
           <div class="cs-item-text">
             <div class="cs-flex">
               <h3 class="cs-h3">Kilt &amp; Clover</h3>
-              <span class="cs-desc">A complete Travel Agency App UI</span>
+              <span class="cs-desc">An Ecommerce Startup With a Lot of Celtic Love</span>
             </div>
             <picture class="cs-icon-wrapper">
               <img class="cs-icon" decoding="async"
@@ -727,8 +726,8 @@ this.rel = 'stylesheet';
           </picture>
           <div class="cs-item-text">
             <div class="cs-flex">
-              <h3 class="cs-h3">Demo Take Out Restaurant</h3>
-              <span class="cs-desc">Demo website we built for a fictional sandwich shop. (It's a shame it's not real, we'd love their steak and cheese right now.) Fully optimized, even with a multitude of images and assets it still scores a perfect 100 performance score on Google PageSpeed.</span>
+              <h3 class="cs-h3">Demo - Redline Subs</h3>
+              <span class="cs-desc">Example website for take-out restauraunts. (It's a shame it's not real, we'd love their steak and cheese right now.)</span>
             </div>
             <picture class="cs-icon-wrapper">
               <img class="cs-icon" decoding="async"
@@ -739,59 +738,8 @@ this.rel = 'stylesheet';
         </a>
       </li>
     </ul>
-    <a href="/" class="cs-button-solid">View All Works</a>
   </div>
   <div class="cs-bubbles" aria-hidden="true"></div>
-</section>
-
-
-<!-- ============================================ -->
-<!--                   Example                    -->
-<!-- ============================================ -->
-
-<section id="sbs-1010">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <a href="https://redlinedemo.nutfielddigital.com" target="_blank"  class="cs-picture" aria-label="See a Demo Website">
-        <picture>
-          <!--Desktop-->
-          <source media="(min-width: 1024px)"
-            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 518, height: 436, position: 'left' }) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1036, height: 872, position: 'left' }) | avif %} 2x"
-            type="image/avif">
-          <source media="(min-width: 1024px)"
-            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 518, height: 436, position: 'left' }) | webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1036, height: 872, position: 'left' }) | webp %} 2x"
-            type="image/webp">
-          <!--Tablet-->
-          <source media="(min-width: 601px)"
-            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 776, height: 237}) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1552, height: 474}) | avif %} 2x"
-            type="image/avif">
-          <source media="(min-width: 601px)"
-            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 776, height: 237})| webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1552, height: 474}) | webp %} 2x"
-            type="image/webp">
-          <!--Mobile-->
-          <source media="(min-width: 600px)"
-            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 544, height: 237, position: 'left' }) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1088, height: 474, position: 'left' }) | avif %} 2x"
-            type="image/avif">
-          <source media="(min-width: 600px)"
-            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 544, height: 237, position: 'left' }) | webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1088, height: 474, position: 'left' }) | webp %} 2x"
-            type="image/webp">
-          <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/redline.jpg' | webp %}" alt="demo website"
-            width="1552" height="1082" aria-hidden="true">
-        </picture>
-      </a>
-    </div>
-    <div class="cs-content">
-      <span class="cs-topper">Examples</span>
-      <h2 class="cs-title">See a Demo</h2>
-      <p class="cs-text">
-        If you're looking for more variety, check out this demo website we built for a fictional sandwich shop. (It's a shame it's not real, we'd love their steak and cheese right now.) This just scratches the surface of what we can do!<br /><br />
-        <!--Creates the space between p tags on mobile-->
-        <span class="cs-spacer"></span>
-        And yes, it's fully optimized. Even with the multitude of images and assets, it still scores a perfect 100 performance score on Google PageSpeed Insights for both mobile and desktop. Try it out yourself and see how fast it loads!
-      </p>
-      <a href="https://redlinedemo.nutfielddigital.com" target="_blank" class="cs-button-solid">See a Demo Website</a>
-    </div>
-  </div>
 </section>
 
 <!-- ============================================ -->
@@ -802,15 +750,12 @@ this.rel = 'stylesheet';
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Pricing</span>
-      <h2 class="cs-title">It's Easy to Get Started</h2>
+      <h2 class="cs-title">Up Front and Honest Pricing</h2>
       <p class="cs-text">
-        As a small business ourselves, we also hate big barriers of entry and paying for services that still make us do
-        all the work
-        ourselves. So we created our plans to eliminate all that.
+        We don't like putting large barriers of entry in front of essential services, so we designed our plans to eliminate them. With our <strong>Partner Plan</strong> you get a custom website with no money down and unlimited updates. And <strong>Lump Sum</strong> is for if you prefer to pay up front and pick and choose your features.
       </p>
       <p class="cs-text">
-        With our <strong>Partner Plan</strong> you get a custom website with no money down and unlimited updates. The
-        <strong>Lump Sum</strong> option is here if you prefer to pay up front and choose your features.
+        If you are in need of a professional online presence and haven't had the time or financial investment that's often asked, give us a call and let us show you how we are different.
       </p>
     </div>
     <ul class="cs-card-group">

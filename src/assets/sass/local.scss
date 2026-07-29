@@ -1157,8 +1157,13 @@
   }
 
   #portfolio {
+    position: absolute;
+    top: -5rem;
+  }
+
+  #port-gal {
     padding: var(--sectionPadding);
-    background-color: #1a1a1a;
+    background-color: var(--dark);
     position: relative;
     z-index: 1;
     /* Prevents overflow from the image going off screen */
@@ -1217,9 +1222,8 @@
       grid-column: span 12;
 
       &:hover {
-
         .cs-picture {
-          box-shadow: 0 0 2px 2px var(--primary);
+          border-color: var(--primary);
         }
 
         .cs-h3,
@@ -1229,6 +1233,7 @@
 
         .cs-item-text {
           background-color: var(--primary);
+          border-color: var(--primary);
         }
 
         .cs-icon-wrapper {
@@ -1247,11 +1252,12 @@
       height: clamp(21.5rem, 30vw, 26.25rem);
       margin: auto;
       border-radius: 0 calc(24 / 16 * 1rem) 0 calc(24 / 16 * 1rem);
-      box-shadow: 0 0 0 1px #bababa;
+      border: 2px solid var(--medium);
+      box-shadow: rgba(149, 157, 165, 0.3) 0px 2px 12px;
       display: block;
       position: relative;
       overflow: hidden;
-      transition: box-shadow 0.3s;
+      transition: border 0.3s;
 
       img {
         width: 100%;
@@ -1268,13 +1274,14 @@
       padding: clamp(1rem, 2vw, 1.25rem) clamp(1rem, 2.8vw, 2.5rem);
       background-color: #f7f7f7;
       border-radius: 0 calc(24 / 16 * 1rem) 0 calc(24 / 16 * 1rem);
+      border: 2px solid var(--medium);
       display: flex;
       justify-content: space-between;
       align-items: center;
       /* makes the item text the element that grows to fill the container */
       flex-grow: 1;
       gap: calc(16 / 16 * 1rem);
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, border 0.3s;
     }
 
     .cs-flex {
@@ -1373,7 +1380,7 @@
 
 /* In Between - 600px */
 @media only screen and (min-width: 48rem) {
-  #portfolio {
+  #port-gal {
     .cs-item {
       grid-column: span 6;
     }
@@ -1383,172 +1390,13 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode {
-    #portfolio {
+    #port-gal {
       background-color: rgba(0, 0, 0, 0.6);
 
-      .cs-title,
-      .cs-text,
-      .cs-h3 {
-        color: var(--bodyTextColorWhite);
-      }
 
       .cs-text {
         opacity: 0.8;
       }
-    }
-  }
-}
-
-/*-- -------------------------- -->
-<---         Example            -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #sbs-1010 {
-    padding: var(--sectionPadding);
-    background-color: #1a1a1a;
-
-    .cs-container {
-      width: 100%;
-      /* changes to 1280px at desktop */
-      max-width: calc(800 / 16 * 1rem);
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
-    }
-
-    .cs-content {
-      /* set text align to left if content needs to be left aligned */
-      text-align: left;
-      width: 100%;
-      /* changes to 522px at desktop */
-      margin-top: calc(-16 / 16 * 1rem);
-      display: flex;
-      flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
-      align-items: flex-start;
-    }
-
-    .cs-title,
-    .cs-text {
-      color: var(--bodyTextColorWhite);
-    }
-
-    .cs-text {
-      margin-bottom: calc(16 / 16 * 1rem);
-      opacity: 0.8;
-
-      &:last-of-type {
-        margin-bottom: calc(32 / 16 * 1rem);
-      }
-    }
-
-    .cs-spacer {
-      width: 100%;
-      /* 16px - 24px */
-      height: clamp(1rem, 3vw, 1.5rem);
-      display: block;
-    }
-
-    .cs-image-group {
-      width: 100%;
-    }
-
-    .cs-picture {
-      width: 100%;
-      height: calc(261 / 16 * 1rem);
-      border: 12px solid #fff;
-      border-radius: 0 2rem;
-      background-color: #fff;
-      display: block;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      position: relative;
-      transition: border-color 0.3s, transform 0.3s;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 0 1.25rem;
-        /* makes it behave like a background image */
-        object-fit: cover;
-        object-position: left;
-        transition: transform 0.3s;
-      }
-
-      &:hover {
-        border-color: var(--primary);
-        transform: scale(1.025);
-      }
-    }
-  }
-}
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #sbs-1010 {
-    .cs-container {
-      align-items: flex-start;
-    }
-
-    .cs-flex-group {
-      flex-direction: row;
-    }
-
-    .cs-text {
-      columns: 2;
-      column-gap: calc(24 / 16 * 1rem);
-    }
-
-    .cs-spacer {
-      display: none;
-    }
-  }
-}
-
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbs-1010 {
-    .cs-container {
-      max-width: calc(1280 / 16 * 1rem);
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      /* 100px - 200px */
-      gap: clamp(6.25rem, 13vw, 12.5rem);
-    }
-
-    .cs-image-group {
-      max-width: calc(542 / 16 * 1rem);
-      display: flex;
-      justify-content: flex-end;
-      position: relative;
-    }
-
-    .cs-picture {
-      height: calc(460 / 16 * 1rem);
-      aspect-ratio: initial;
-    }
-
-    .cs-content {
-      flex: none;
-      width: 54%;
-      max-width: calc(542 / 16 * 1rem);
-    }
-  }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode {
-    #sbs-1010 {
-      background-color: rgba(0, 0, 0, 0.6);
     }
   }
 }
@@ -1582,6 +1430,14 @@
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
+    }
+
+    .cs-text {
+      margin-bottom: 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     .cs-topper {

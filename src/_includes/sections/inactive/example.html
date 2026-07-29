@@ -1,0 +1,50 @@
+
+
+<!-- ============================================ -->
+<!--                   Example                    -->
+<!-- ============================================ -->
+
+<section id="sbs-1010">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <a href="https://redlinedemo.nutfielddigital.com" target="_blank"  class="cs-picture" aria-label="See a Demo Website">
+        <picture>
+          <!--Desktop-->
+          <source media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 518, height: 436, position: 'left' }) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1036, height: 872, position: 'left' }) | avif %} 2x"
+            type="image/avif">
+          <source media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 518, height: 436, position: 'left' }) | webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1036, height: 872, position: 'left' }) | webp %} 2x"
+            type="image/webp">
+          <!--Tablet-->
+          <source media="(min-width: 601px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 776, height: 237}) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1552, height: 474}) | avif %} 2x"
+            type="image/avif">
+          <source media="(min-width: 601px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 776, height: 237})| webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1552, height: 474}) | webp %} 2x"
+            type="image/webp">
+          <!--Mobile-->
+          <source media="(min-width: 600px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 544, height: 237, position: 'left' }) | avif %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1088, height: 474, position: 'left' }) | avif %} 2x"
+            type="image/avif">
+          <source media="(min-width: 600px)"
+            srcset="{% getUrl '/assets/images/redline.jpg' | resize({ width: 544, height: 237, position: 'left' }) | webp %} 1x, {% getUrl '/assets/images/redline.jpg' | resize({ width: 1088, height: 474, position: 'left' }) | webp %} 2x"
+            type="image/webp">
+          <img loading="lazy" decoding="async" src="{% getUrl '/assets/images/redline.jpg' | webp %}" alt="demo website"
+            width="1552" height="1082" aria-hidden="true">
+        </picture>
+      </a>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Examples</span>
+      <h2 class="cs-title">See a Demo</h2>
+      <p class="cs-text">
+        If you're looking for more variety, check out this demo website we built for a fictional sandwich shop. (It's a shame it's not real, we'd love their steak and cheese right now.) This just scratches the surface of what we can do!<br /><br />
+        <!--Creates the space between p tags on mobile-->
+        <span class="cs-spacer"></span>
+        And yes, it's fully optimized. Even with the multitude of images and assets, it still scores a perfect 100 performance score on Google PageSpeed Insights for both mobile and desktop. Try it out yourself and see how fast it loads!
+      </p>
+      <a href="https://redlinedemo.nutfielddigital.com" target="_blank" class="cs-button-solid">See a Demo Website</a>
+    </div>
+  </div>
+</section>

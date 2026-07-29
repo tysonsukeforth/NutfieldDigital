@@ -1,0 +1,155 @@
+
+
+/*-- -------------------------- -->
+<---         Example            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-1010 {
+    padding: var(--sectionPadding);
+    background-color: #1a1a1a;
+
+    .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: calc(800 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      /* changes to 522px at desktop */
+      margin-top: calc(-16 / 16 * 1rem);
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+
+    .cs-title,
+    .cs-text {
+      color: var(--bodyTextColorWhite);
+    }
+
+    .cs-text {
+      margin-bottom: calc(16 / 16 * 1rem);
+      opacity: 0.8;
+
+      &:last-of-type {
+        margin-bottom: calc(32 / 16 * 1rem);
+      }
+    }
+
+    .cs-spacer {
+      width: 100%;
+      /* 16px - 24px */
+      height: clamp(1rem, 3vw, 1.5rem);
+      display: block;
+    }
+
+    .cs-image-group {
+      width: 100%;
+    }
+
+    .cs-picture {
+      width: 100%;
+      height: calc(261 / 16 * 1rem);
+      border: 12px solid #fff;
+      border-radius: 0 2rem;
+      background-color: #fff;
+      display: block;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      position: relative;
+      transition: border-color 0.3s, transform 0.3s;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 0 1.25rem;
+        /* makes it behave like a background image */
+        object-fit: cover;
+        object-position: left;
+        transition: transform 0.3s;
+      }
+
+      &:hover {
+        border-color: var(--primary);
+        transform: scale(1.025);
+      }
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-1010 {
+    .cs-container {
+      align-items: flex-start;
+    }
+
+    .cs-flex-group {
+      flex-direction: row;
+    }
+
+    .cs-text {
+      columns: 2;
+      column-gap: calc(24 / 16 * 1rem);
+    }
+
+    .cs-spacer {
+      display: none;
+    }
+  }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-1010 {
+    .cs-container {
+      max-width: calc(1280 / 16 * 1rem);
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      /* 100px - 200px */
+      gap: clamp(6.25rem, 13vw, 12.5rem);
+    }
+
+    .cs-image-group {
+      max-width: calc(542 / 16 * 1rem);
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .cs-picture {
+      height: calc(460 / 16 * 1rem);
+      aspect-ratio: initial;
+    }
+
+    .cs-content {
+      flex: none;
+      width: 54%;
+      max-width: calc(542 / 16 * 1rem);
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #sbs-1010 {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
