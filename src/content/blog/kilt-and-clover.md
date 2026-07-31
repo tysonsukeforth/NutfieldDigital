@@ -10,9 +10,16 @@ tags:
     - portfolio
 image: /assets/images/blog/kiltandclover.webp
 imageAlt: Kilt & Clover Website
+buttons:
+  primary:
+    text: Visit Kilt & Clover
+    url: https://kiltandclover.com
+  secondary:
+    text: Website Pricing
+    url: /pricing
 ---
 
-Kilt & Clover is a new online storefront for Celtic themed gifts, inspired by the owner's love and exploration of their family's Irish background. Their selection includes everything from official Guinness merchandise to Highland themed children's books, with their specialty being hand curated and themed gift boxes for every occasion.
+[Kilt & Clover](https://kiltandclover.com) is a new online storefront for Celtic themed gifts, inspired by the owner's love and exploration of their family's Irish background. Their selection includes everything from official Guinness merchandise to Highland themed children's books, with their specialty being hand curated and themed gift boxes for every occasion.
 
 They needed an ecommerce website could do more than showcase their products, it needed to tell their story. We also wanted to get it off and running quickly, affordibly, and be ready to grow as the business does. And they wanted an ecommerce solution that could be used to sell in-person at local events as well as online. To best serve all these, we coupled a content rich homepage with a Square storefront.
 

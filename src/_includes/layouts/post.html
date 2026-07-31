@@ -41,29 +41,11 @@
   <div class="cs-container">
     <article class="cs-article-post">
       <picture class="cs-article-image">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | avif %}"
-          type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | webp %}"
-          type="image/webp">
-        <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | jpeg %}"
-          type="image/jpeg">
-        <!--Tablet Image-->
-        <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | avif %}"
-          type="image/avif">
-        <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | webp %}"
-          type="image/webp">
-        <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | jpeg %}"
-          type="image/jpeg">
-        <!--Desktop Image-->
-        <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | avif %}"
-          type="image/avif">
-        <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | webp %}"
-          type="image/webp">
-        <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}"
-          type="image/jpeg">
-        <img src="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" alt="{{ alt }}" width="800"
-          height="400" loading="lazy" decoding="async" aria-hidden="true">
+        <source sizes="(max-width: 52rem) calc(100vw - 2.25rem), (max-width: 1023px) 49.75rem, (max-width: 78.5rem) calc(100vw - 28.75rem), 49.75rem"
+        srcset="{% getUrl image | resize({ width: 364, height: 182 }) | webp %} 364w, {% getUrl image | resize({ width: 796, height: 398 }) | webp %} 796w, {% getUrl image | resize({ width: 1592, height: 796 }) | webp %} 1592w"
+        />
+        <img src="{% getUrl image | resize({ width: 796, height: 398 }) | jpeg %}" alt="{{ alt }}" width="796"
+          height="398" loading="lazy" decoding="async" aria-hidden="true">
       </picture>
       <div class="cs-article-group">
         <h1 class="cs-article-title">{{ title }}</h1>
@@ -79,6 +61,17 @@
       </div>
       <section class="cs-article-content">
         {{ content | safe }}
+
+        {% if buttons %}
+        <div class="cs-button-group">
+          {% if buttons.primary %}
+            <a href="{{ buttons.primary.url | url }}" class="cs-button-solid cs-button-light" aria-label="{{ buttons.primary.text }}">{{ buttons.primary.text }}</a>
+          {% endif %}
+          {% if buttons.secondary %}
+            <a href="{{ buttons.secondary.url | url }}" class="cs-button-outline" aria-label=">{{ buttons.secondary.text }}">{{ buttons.secondary.text }}</a>
+          {% endif %}
+        </div>
+        {% endif %}
       </section>
     </article>
   </div>
