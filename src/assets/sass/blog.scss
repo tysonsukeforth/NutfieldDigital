@@ -572,6 +572,10 @@
         li {
           opacity: 0.8;
         }
+
+        a:not(.cs-button-solid, .cs-button-outline) {
+          color: var(--primaryLight);
+        }
       }
     }
   }
