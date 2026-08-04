@@ -10,6 +10,7 @@ module.exports = {
     country: "US",
   },
   socials: {
+    facebook: "https://www.facebook.com/people/Nutfield-Digital/61577509505324/",
     linkedin: "https://www.linkedin.com/company/nutfield-digital",
   },
   //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
