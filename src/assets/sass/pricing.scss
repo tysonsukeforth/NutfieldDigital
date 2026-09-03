@@ -556,6 +556,22 @@
       flex-direction: column;
       /* 16px - 20px */
       gap: clamp(1rem, 2vw, 1.25rem);
+
+      &.lump {
+        .cs-lump-disable {
+          .cs-exp-desc {
+            opacity: 0.7;
+          }
+
+          .cs-note-wrap {
+            grid-template-rows: 1fr;
+          }
+
+          .cs-note {
+            opacity: 0.85;
+          }
+        }
+      }
     }
 
     .cs-item {
@@ -637,7 +653,7 @@
 
       .cs-li-img {
         /* turns the check mark white */
-        filter: brightness(9999%);
+        filter: brightness(999%);
       }
     }
 
@@ -738,10 +754,11 @@
     .cs-li {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
+      font-weight: 700;
       line-height: 1.5em;
       list-style: none;
       padding: 0;
-      margin: 0 0 calc(12 / 16 * 1rem);
+      margin: 0 0 calc(8 / 16 * 1rem);
       color: var(--bodyTextColorWhite);
       display: flex;
       justify-content: flex-start;
@@ -763,6 +780,23 @@
       height: auto;
       margin-top: calc(3 / 16 * 1rem);
       margin-right: calc(8 / 16 * 1rem);
+    }
+
+    .cs-exp {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cs-note-wrap {
+      display: grid;
+      grid-template-rows: 0fr;
+      padding-left: 0.5rem;
+      transition: grid-template-rows 0.3s ease-in-out;
+    }
+
+    .cs-note {
+      overflow: hidden;
+      min-height: 0;
     }
 
     .cs-footer {
