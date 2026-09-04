@@ -141,7 +141,7 @@
 
       .cs-li-img {
         /* turns the check mark white */
-        filter: brightness(9999%);
+        // filter: brightness(9999%);
       }
     }
 
@@ -251,6 +251,11 @@
       width: 100%;
       margin: 0 0 calc(16 / 16 * 1rem) 0;
     }
+  }
+
+  .cs-details {
+    font-size: calc(14 / 16 * 1rem);
+    opacity: 0.8;
   }
 }
 
@@ -557,10 +562,24 @@
       /* 16px - 20px */
       gap: clamp(1rem, 2vw, 1.25rem);
 
+      .cs-option1-vis,
+      .cs-option2-vis {
+        transition: opacity 0.3s;
+      }
+
+      .cs-option1-vis {
+        opacity: 1;
+      }
+
+      .cs-option2-vis,
+      .cs-option2-part {
+        opacity: 0;
+      }
+
       &.lump {
         .cs-lump-disable {
           .cs-exp-desc {
-            opacity: 0.7;
+            opacity: 0.4;
           }
 
           .cs-note-wrap {
@@ -570,6 +589,18 @@
           .cs-note {
             opacity: 0.85;
           }
+        }
+
+        .cs-option1-vis {
+          opacity: 0;
+        }
+
+        .cs-option2-part {
+          opacity: 0.6;
+        }
+
+        .cs-option2-vis {
+          opacity: 1;
         }
       }
     }
@@ -653,7 +684,7 @@
 
       .cs-li-img {
         /* turns the check mark white */
-        filter: brightness(999%);
+        filter: brightness(120%);
       }
     }
 
@@ -754,7 +785,6 @@
     .cs-li {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
-      font-weight: 700;
       line-height: 1.5em;
       list-style: none;
       padding: 0;
@@ -771,15 +801,22 @@
 
     .cs-disabled {
       /* fades out list items that are disabled from the price tier */
-      filter: grayscale(1);
-      opacity: 0.3;
+      // filter: grayscale(1);
+      opacity: 0.6;
     }
 
     .cs-li-img {
+      position: relative;
       width: calc(20 / 16 * 1rem);
       height: auto;
-      margin-top: calc(3 / 16 * 1rem);
+      margin-top: calc(2 / 16 * 1rem);
       margin-right: calc(8 / 16 * 1rem);
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
 
     .cs-exp {
@@ -797,6 +834,7 @@
     .cs-note {
       overflow: hidden;
       min-height: 0;
+      font-weight: normal;
     }
 
     .cs-footer {
