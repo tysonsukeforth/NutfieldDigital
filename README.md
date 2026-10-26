@@ -1,22 +1,22 @@
 <br/>
 <p align="center">
-  <a href="https://codestitch.app/">
-    <img src="https://codestitch.app/frontend/images/icon.png" alt="Logo" width="80" height="80">
+  <a href="https://nutfielddigital.com">
+    <img src="https://nutfielddigital.com/assets/images/Logo-solid.png" alt="Logo" width="450" height="144">
   </a>
 
-  <h3 align="center">Intermediate Starter Kit (SASS)</h3>
+  <h3 align="center">Nutfield Digital LLC</h3>
 
-  <p align="center">
-    Introducing the Intermediate Website Kit, presented by CodeStitch. This kit includes a pre-configured Eleventy environment with Nunjucks templating, along with seamless integration of Decap CMS. This setup allows you to quickly start a project while providing your client with a blog for content management. Everything is ready to go right from the start, offering a fantastic introduction to the advantages of a Static Site Generator, complete with SASS preprocessing.
+  <p>
+    This website is built upon the Intermediate Website Kit framework by CodeStitch. This kit includes a pre-configured Eleventy environment with Nunjucks templating, along with seamless integration of Decap CMS, static site generation, and SASS preprocessing.
     <br/>
     <br/>
-    <a href="https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-LESS">LESS Starter Kit</a>
-    .
-    <a href="https://codestitch-intermediate.netlify.app/">View Live Result</a>
-    .
-    <a href="https://www.youtube.com/watch?v=0BNCYM4InT0&t">Watch Video</a>
-    .
-    <a href="https://codestitch.app/contact">Report Bug</a>
+    All subsequent functionality and creative assets were made in house by Tyson Sukeforth. Layout, branding, and copy were designed in Figma. Graphic assets were created in Canva Affinity. Code was done by hand in VS Code.
+    <br/>
+    <br/>
+    No AI was used in any part of development.
+    <br/>
+    <br/>
+    <a href="https://nutfielddigital.com/contact/">Contact Us</a>
   </p>
 </p>
 
