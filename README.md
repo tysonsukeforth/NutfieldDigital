@@ -3,6 +3,7 @@
   <a href="https://nutfielddigital.com">
     <img src="https://nutfielddigital.com/assets/images/Logo-solid.png" alt="Logo" width="450" height="144">
   </a>
+</p>
 
   <h3 align="center">Nutfield Digital LLC</h3>
 
@@ -10,15 +11,15 @@
     This website is built upon the Intermediate Website Kit framework by CodeStitch. This kit includes a pre-configured Eleventy environment with Nunjucks templating, along with seamless integration of Decap CMS, static site generation, and SASS preprocessing.
     <br/>
     <br/>
-    All subsequent functionality and creative assets were made in house by Tyson Sukeforth. Layout, branding, and copy were designed in Figma. Graphic assets were created in Canva Affinity. Code was done by hand in VS Code.
+    All subsequent functionality and creative assets were made in house at Nutfield Digital by Tyson Sukeforth. Layout, branding, and copy were designed in Figma. Graphic assets were created in Canva Affinity. Development was hand-coded in VS Code.
     <br/>
     <br/>
-    No AI was used in any part of development.
-    <br/>
-    <br/>
-    <a href="https://nutfielddigital.com/contact/">Contact Us</a>
+    If you're interested in what we do, you're invited to <a href="https://nutfielddigital.com/contact/">contact us</a> with any questions that may be tickling your brain.
   </p>
-</p>
+
+  <p align="center">
+    <a href="https://nutfielddigital.com">https://nutfielddigital.com</a>
+  </p>
 
 ## Table of Contents
 
