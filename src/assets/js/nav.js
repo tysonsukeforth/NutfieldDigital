@@ -46,3 +46,30 @@ for (const item of dropDowns) {
   };
   item.addEventListener("click", onClick);
 }
+
+// Console easter egg for curious minds
+const easteregg = `
+
+[0;37m         [0;91m▄[0;37m   [0;91m▄[0;31m▄[0;37m [0;91m▀[0;37m     [0;91m▄[0;37m   [0;31m▄[0;37m        [0;31m▄[0;37m [0;91m▀[0;37m     [0;91m▀[0;37m  [0;91m▄[0;37m      [0;91m▄[0m
+[0;91m█[0;31m■█[0;37m [0;91m█[0;37m [0;31m█[0;37m [0;31m▀█▀[0;37m [0;31m█▄[0;37m  [0;31m█[0;37m [0;31m▄[0;91m▀[0;31m█[0;37m [0;31m█[0;37m [0;31m▄[0;91m▀[0;31m█[0;37m      [0;31m▄[0;91m▀[0;31m█[0;37m [0;31m█[0;37m [0;31m▄[0;91m▀[0;31m█[0;37m [0;31m█[0;37m [0;31m▀█▀[0;37m [0;91m▀[0;31m▀▄[0;37m [0;31m█[0m
+[0;31m█[0;37m [0;31m█[0;37m [0;31m█▄█[0;37m  [0;31m█[0;37m  [0;31m█[0;37m   [0;31m█[0;37m [0;31m█▄▄[0;37m [0;31m█[0;37m [0;31m▀▄█[0;37m      [0;31m▀▄█[0;37m [0;31m█[0;37m [0;31m▀▄█[0;37m [0;31m█[0;37m  [0;31m█[0;37m  [0;31m█▄█[0;37m [0;31m█[0m
+[0;37m            [0;31m▀[0;37m                           [0;31m▄▀[0;37m            [0m
+
+----------------------------------------------------------
+
+My, aren't we curious! Luckily for you, we like curious!
+
+If you're this interested in what we do, you're invited to email us at
+nutfielddigital@gmail.com
+with anything that could be tickling your brain and strike up a conversation.
+
+Don't be shy, we don't bite!
+
+Well our squirrel might, but only if you can pull off a really convincing acorn impersonation. In which case, proceed with caution.
+
+- 🌰🐿️
+
+----------------------------------------------------------
+ `;
+
+console.log(easteregg);
