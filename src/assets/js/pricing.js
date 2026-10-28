@@ -1,6 +1,6 @@
 const toggle = document.querySelector("#pricing-356 .cs-toggle");
-  const option1 = document.querySelector("#pricing .cs-toggle-group #cs-option1");
-  const option2 = document.querySelector("#pricing .cs-toggle-group #cs-option2");
+  const option1 = document.querySelector("#pricing-356 .cs-toggle-group #cs-option1-356");
+  const option2 = document.querySelector("#pricing-356 .cs-toggle-group #cs-option2-356");
   const optionGroup = Array.from(document.querySelectorAll('.cs-option-group'))
   const cardGroup = document.querySelector("#pricing-356 .cs-card-group");
 
